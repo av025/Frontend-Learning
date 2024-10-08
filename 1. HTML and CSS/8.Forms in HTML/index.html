@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms in HTML</title>
+  </head>
+  <body>
+    <h1>Forms in HTML</h1>
+    <!--* Forms in HTML was used to take input from the user and saved that input data or information in the application backend development part in database.  -->
+    <!-- Let see example of form tag in html -->
+    <form action="./index.html">
+      <!--? There was label tag also to give title to our input tags -->
+      <!--! Label was opening-closing tag -->
+      <label for="full-name">Full Name :</label>
+      <!--* In label tag we used for attribute to inter-connect label tag with input tag and we give value of id-attribute which give in input tag both the value was same than we interconnect our label tag with input tag. -->
+      <!--? Inside form tag we used input tags to take inputs from users -->
+      <!--! input tags are self-closing tag and input tags are so many types -->
+      <input type="text" id="full-name" />
+      <!--* Here we use id attribute to inter-connect  our input filed wih label tag and value of id & for attribute should be same.  -->
+
+      <!--* Now we want our new inputs filed from new line and HTML ignores new line it start render html tag on same line -->
+      <!--? For starting our document from new line we have to use " br tag " here br means " break the line " -->
+      <br />
+      <br />
+      <!--! Here br was also Self-closing tag. -->
+      <!--? Email type input field -->
+      <label for="email">Email :</label>
+      <input type="email" id="email" />
+      <br />
+      <br />
+      <!--? Password type input field -->
+      <label for="password">Password :</label>
+      <input type="password" id="password" />
+      <br />
+      <br />
+      <!--? Submit type input which work same as button to submit our user data -->
+      <input type="submit" />
+    </form>
+    <!--! This form tag was also opening-closing tag and which has action attribute which helps to send our data where we want to... -->
+  </body>
+</html>
