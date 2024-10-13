@@ -1,0 +1,147 @@
+/*? Colors in CSS */
+
+/** Let's look color property one by one :- */
+/*? Colors Name */
+
+p {
+  color: coral;
+  /*! With the help of color property we can give text-color and we use color names format to give text-color using coral color. */
+  color: tomato;
+  /** Now giving color name format tomato */
+  color: aqua;
+  /** Now giving color name format  aqua */
+}
+
+/*? RGB Color Format  */
+/* With the help of RGB Format we can create lot of colors in RGB Format we have three main colors R = red , G = green and B = blue with the mixtures or blend of 3 colors all the colors we create  */
+
+/** Syntax of rgb format  */
+/* color: rgb(red-color intensity , green-color intensity , blue-color intensity ) */
+
+/*! Instensity of RGB from 0 to 255  and maximum-value was 255 and lowest-value was 0. */
+
+/** For white color we have to give all three values maximum 255   */
+p {
+  color: rgb(255, 255, 255);
+}
+
+/** For black color we have to give lowest intensity 0 to all three values. */
+p {
+  color: rgb(0, 0, 0);
+}
+
+/** For Full red color we have to give red-intensity 255 and green-intensity & blue-intensity 0  */
+p {
+  color: rgb(255, 0, 0);
+}
+
+/** For full green color we give green-intensity 255 and red & blue intensity 0  */
+p {
+  color: rgb(0, 255, 0);
+}
+
+/** For full blue color we give blue-instensity 255 and green & red instensity 0  */
+p {
+  color: rgb(0, 0, 255);
+}
+
+/** Blend or mixture of all three colors */
+p {
+  color: rgb(150, 100, 50);
+}
+
+/*? RGBA Format  */
+/** In RGBA Format the new thing Alpha Channel was add which used to define opacity of our color the color was thicker or thin that depend on Alpha channel */
+
+/* Let see rgba format  */
+p {
+  color: rgba(120, 60, 255, 0.3);
+}
+
+/*! The Range of Alpha Channel was .0 to 1 the .0 was transparent full. */
+
+/*? Hexcode format  */
+/* We can generate colors with the help of Hexadecimal code was also  */
+/*! We have to use hastag tag for Hexadecimal value format */
+
+/** In Hexadecimal the code the intensity was from 0 to f where 0 was lowest intensity and 255 was highest intensity. */
+
+/*! Syntax of Hexcode was color : #RRGGBB */
+/** First two value for red. */
+/** Than two value for green. */
+/** Last two values for blue. */
+
+/** For White color we can give f to all than it give us white value. */
+p {
+  color: #ffffff;
+}
+
+/** For black value we give 0 to all than it gives black value. */
+p {
+  color: #000000;
+}
+
+/*? We can give hexcode in shortform also only giving value upto 3 places only  */
+/*! color : RGB */
+
+p {
+  /** white color */
+  color: #fff;
+  /** black color */
+  color: #000;
+}
+
+/** For the red we have to give maximum intensity f to red-color places and other places was 0  */
+p {
+  color: #ff0000;
+}
+
+/** For the green we have to give maximum intensity f to green-color places and other places was 0 */
+p {
+  color: #00ff00;
+}
+
+/** For the blue we have to give maximum intensity f to blue-color places and other places was 0 */
+p {
+  color: #0000ff;
+}
+
+/** Now blend or mix the all colors intensity to create other color  */
+p {
+  color: #4a6f5c;
+}
+
+/*? HSL Format */
+/* In HSL Format we create color with the help of Hue , Saturation and Lightness  */
+
+/*! Hue is the degree on the wheel which was 0 to 360 degree where 0 was red , 180 was green and 360 was blue. */
+/*! Saturation was the percentage value. 0% is the shade of gray and 100% was full color.  */
+/*! Lightness was also percentage value in which 0% was black , 50% was not either dark or light , 100% was fully white. */
+
+/*? Let see the example of HSL Format  */
+p {
+  color: hsl(0, 100, 0); /** For Black color   */
+  color: hsl(0, 100, 100); /** For White color */
+}
+
+/** For Red Color  */
+p {
+  color: hsl(0, 100, 50);
+}
+
+/** For Green color */
+p {
+  color: hsl(123, 50%, 50%);
+}
+
+/** For Blue color */
+p {
+  color: hsl(214, 92%, 23%);
+}
+
+/** Alpha Channel  */
+p {
+  color: hsla(250, 100%, 50%, 0.225);
+}
+
+/*! Mainly we used RGB Format and HEXCODE Formar mainly and some time colors-names and HSL Format used by the Designers. */
