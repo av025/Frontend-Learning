@@ -1,0 +1,5 @@
+/*! In This external css we write the syntax same we write in style tag or internal css */
+/* css-selector { css-property : value ; } */
+p {
+  color: rgb(21, 155, 77);
+}

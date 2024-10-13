@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Types of ways to add CSS</title>
+    <style>
+      /* Syntax of css */
+      /* selector {
+      css-property : value;
+
+      } */
+      /* p {
+        color: rgb(21, 155, 77);
+      } */
+    </style>
+    <!--! link tag -->
+    <!-- With the help of link tag we can add our external file and external css -->
+    <link rel="stylesheet" href="style.css" />
+    <!--* This link tag has two attribute first was rel attribute it means "relation or  relationship" so we want stylesheet and href attribute means "hyper-reference link" where we link our css-style -->
+  </head>
+  <body>
+    <h1>Types of ways to add CSS in our HTML Document</h1>
+    <p style="font-size: 2rem">There was 3 ways to add CSS</p>
+    <ul>
+      <li style="font-size: 1.5rem">Inline Styling</li>
+      <li style="font-size: 1.5rem">Internal Styling</li>
+      <li style="font-size: 1.5rem">External Styling</li>
+    </ul>
+    <h2>Inline Styling</h2>
+    <p style="font-size: 1.5rem; color: black">
+      In inline styling we are style our html elements individualy with the help
+      of <span style="color: red"><q>style attribute</q></span>
+    </p>
+    <h3>Example of inline Styling</h3>
+    <p style="background-color: aqua; color: darkgoldenrod">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem
+      doloribus velit odio dolor impedit possimus libero alias. Harum esse
+      quibusdam fugiat error soluta dolorum hic laboriosam atque beatae. Quia
+      non praesentium voluptatum provident et possimus nihil omnis officiis
+      veniam.
+    </p>
+    <p style="background-color: pink">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem
+      doloribus velit odio dolor impedit possimus libero alias. Harum esse
+      quibusdam fugiat error soluta dolorum hic laboriosam atque beatae. Quia
+      non praesentium voluptatum provident et possimus nihil omnis officiis
+      veniam.
+    </p>
+    <p style="background-color: aquamarine">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem
+      doloribus velit odio dolor impedit possimus libero alias. Harum esse
+      quibusdam fugiat error soluta dolorum hic laboriosam atque beatae. Quia
+      non praesentium voluptatum provident et possimus nihil omnis officiis
+      veniam.
+    </p>
+    <p style="background-color: chartreuse">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem
+      doloribus velit odio dolor impedit possimus libero alias. Harum esse
+      quibusdam fugiat error soluta dolorum hic laboriosam atque beatae. Quia
+      non praesentium voluptatum provident et possimus nihil omnis officiis
+      veniam.
+    </p>
+    <h3>Drawbacks of Inline Styling</h3>
+    <p style="font-size: 1.2rem; color: black">
+      The problem with Inline Styling was we have to target every html element
+      individualy and it becomes tideous work for developer.
+    </p>
+    <h2>Internal Styling</h2>
+    <p style="font-size: 1.5rem; color: black">
+      In Internal styling we can use <q style="color: red">style tag</q> which
+      we add inside the head tag.
+    </p>
+    <h3>Syntax of CSS</h3>
+    <p style="font-size: 1.2rem; color: black">
+      <code> selector { css-property : value; } </code>
+    </p>
+    <h3>Example of Internal Styling</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius unde nisi
+      ipsam atque repellat culpa nesciunt est sunt eum odit nihil, omnis
+      exercitationem.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate sint
+      vitae doloribus unde suscipit. Provident sint illo ratione vel? Quasi
+      fugiat maiores labore sequi consectetur, eius impedit perferendis aut
+      magni sapiente sint possimus iste, vel debitis nobis laudantium suscipit
+      in? Neque necessitatibus expedita sint. Est ex aliquam nihil delectus
+      odit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores atque
+      natus neque nostrum, eum facere architecto blanditiis ut pariatur
+      aspernatur repellendus corrupti ipsam delectus, quos quaerat repellat
+      ratione ipsa provident!
+    </p>
+    <h3>Drawbacks of Internal CSS</h3>
+    <p style="font-size: 1.2rem; color: red">
+      In which we don't have to target individualy but if we target any type of
+      html than all that html elements are style same and it create our html
+      document lengthy and messy also because all the css code we are write
+      inside html document only.
+    </p>
+    <h2>External Styling</h2>
+    <p style="color: black; font-size: 1.5rem">
+      In External Styling we create external css file with
+      <span style="color: red">.css extension</span> in which we write the css
+      properties externally not in html document and we have to link the
+      external css with our html document which was most important to link our
+      css with html document with the help of
+      <span style="color: red">link tag</span> in html.
+    </p>
+  </body>
+</html>
