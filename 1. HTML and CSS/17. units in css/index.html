@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Units in CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <>
+    <h1>Units in CSS</h1>
+    <!--* With the help of units we can define the length of our css-property or express the length for example if we want to give any height or width than we use units  -->
+    <!--! This units was categorized in two types  -->
+
+    <!--? 1st.) Absolute Length :-  -->
+    <!-- Absolute length will be accurate length or this length was fixed and a length expressed in any of these will appear as exactly that size. -->
+    <!--* This absolute length was not used mainly or not recommended for use on a screen, because screen sizes vary so much. However they use in which output medium was known such as print layout -->
+    <!--* The example of absolute length was pixel "px" mainly we use -->
+
+    <!--? 2nd.) Relative Unit :-  -->
+    <!-- Relative length was vary and this length was relative or depend on another length property. Relative length units scale better between different rendering medium.  -->
+    <!--* The example of relative length units are rem , em , % { percentage } , vh { viewport Height } , vw { viewport width} etc.  -->
+
+    <!--? Let see the different type of units in css : -->
+    <h2>Pixels Unit</h2>
+    <p style="font-size: 1.2rem">Pixel unit was absolute length unit</p>
+    <h3>Example of pixel unit</h3>
+    <div>We give this width and height in 300 px "pixels units"</div>
+    <h2>Percentage unit "%"</h2>
+    <p style="font-size: 1.2rem">
+      Percentage unit was relative length unit so it was relative to parent
+      length and
+      <span style="color: red"
+        >if we want to use relative length we have to give absolute unit to our
+        parent element than percentage unit work or than not.
+      </span>
+    </p>
+    <h3>Examples of Percentage unit</h3>
+    <section style="font-size: 1.2rem">
+      This section element we give height and width 600px
+      <div
+        style="
+          background-color: coral;
+          height: 40%;
+          width: 100%;
+          font-size: 1.5rem;
+          padding: 5px;
+        "
+      >
+        We give this div element height and width in percentage height was 40 %
+        and width was 100% which was calculated from parent's width and height.
+      </div>
+    </section>
+    <h2>em unit</h2>
+    <p style="font-size: 1.2rem">
+      em unit was also relative unit which depends on font-size of our parent
+      element <span style="color: red">the default font-size was 16px</span>.
+    </p>
+    <h3>Example of em unit</h3>
+    <p style="font-size: 1em">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem
+      excepturi iusto fugiat officiis, eligendi quae quibusdam animi cupiditate
+      quos?
+      <span style="color: coral; font-size: 2em"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+        praesentium!</span
+      >
+    </p>
+    <p style="font-size: 1.2rem">
+      In above em unit example the parent element paragraph has font-size 1 em =
+      16px and the text which are in red was span tag which was children of p
+      tag that font-size was 2em which was 2 * 16 = 32px
+    </p>
+    <h2>rem unit</h2>
+    <p style="font-size: 1.2rem">
+      This rem unit was also relative length but
+      <span style="color: red"
+        >rem unit relative to root element which was html tag
+      </span>
+      it means when we are calculate font-size of any html element with root
+      element { html tag} when we are using rem unit.
+    </p>
+    <h3>Example of rem unit</h3>
+    <p style="font-size: 3rem">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p style="font-size: 1.2rem; color: red">
+      In above example we used rem unit which relative to root element aka html
+      element and we know that default font-size was 16px and we applied 3rem so
+      that was 3 * 16 = 48 px
+    </p>
+    <p style="font-size: 1.3rem; color: coral">
+      Most of html element have default font-size was 16px execept button
+      element etc.
+    </p>
+    <h2>vw unit</h2>
+    <p style="font-size: 1.2rem">
+      vw was also relative length which stand for
+      <span style="color: red">Viewport width</span>. This vw unit was relative
+      to viewport of our device or the body area { Browser screen where our
+      website visible } of our html element.
+    </p>
+    <p style="font-size: 1.3rem; color: chocolate">
+      vw : this unit was relative to 1% of the width of the viewport.
+    </p>
+    <h3>Example of vw unit</h3>
+    <div style="width: 1vw; background-color: crimson; height: 100px"> 1%</div>
+    <div style="width: 50vw; background-color: teal; height: 100px"> 50 %  of the screen or viewport</div>
+    <div style="width: 100vw; background-color: orange; height: 100px; margin: 0;">100 % of the screen or viewport</div>
+    <h2>vh unit</h2>
+    <p style="font-size: 1.2rem;">vh unit was relative unit which was similar to vw unit but here <span style="color: red;">vh unit was relative to viewport height</span> it means our height of html element was calculated from device viewport or screen of browser where we used web-application.</p>
+    <p style="font-size: 1.3rem; color: chocolate">
+      vh : this unit was relative to 1% of the height of the viewport.
+    </p>
+    <h3>Example of vh unit</h3>
+    <div style="width: 100px; height: 1vh; background-color: chartreuse; color:white; padding: 0;">1% </div>
+    <div style="width: 100px; height: 50vh; background-color: cornflowerblue; color: white;">50%</div>
+    <div style="width: 100px; height: 100vh; background-color: coral;">100%</div>
+  </body>
+</html>
