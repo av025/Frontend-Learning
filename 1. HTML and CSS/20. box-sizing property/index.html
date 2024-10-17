@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Box sizing property</title>
+  </head>
+  <body>
+    <h1>Box sizing property</h1>
+    <p style="font-size: 1.2rem">
+      <span style="color: red">box-sizing</span> property was important was used
+      to set the sizing of our content box means height and width of our html
+      element.
+    </p>
+    <h2>box-sizing properties have two values</h2>
+    <h3>content-box property</h3>
+    <p style="font-size: 1.2rem">
+      In this <span style="color: red">content-box</span> property value it was
+      only calculated width and height of our content box
+      <span style="color: red"
+        >if we give padding and border than it was calculated extra in our
+        height and width and increase both.</span
+      >
+    </p>
+    <h3>Example of content-box value</h3>
+    <div
+      style="
+        width: 400px;
+        height: 200px;
+        background-color: crimson;
+        padding: 20px;
+        border: 10px solid gold;
+        color: white;
+        font-size: 1.2rem;
+      "
+    >
+      We use `content-box` value in this div box-sizing property.
+    </div>
+    <p style="font-size: 1.2rem">
+      So above height and width was actually we give
+      <span style="color: red">height = 200px</span> and
+      <span style="color: red">width = 400px</span>
+    </p>
+    <p style="font-size: 1.2rem">
+      We give padding and border in four direction so total padding was
+      <span style="color: red">padding = 20 + 20 + 20 + 20 = 80px</span> and
+      <span style="color: red">border = 10 + 10 + 10 +10 = 40px</span>
+    </p>
+    <p style="font-size: 1.2rem">
+      Total height and width was <span style="color: red">440 x 220</span>
+    </p>
+    <h3>border-box</h3>
+    <p style="font-size: 1.2rem">
+      In this <span style="color: red">border-box</span> value the border and
+      padding was also adjust in height and width also not added in extra spaces
+      <span style="color: red"
+        >We have to always give every html element box-sizing : border-box</span
+      >
+    </p>
+    <h3>Example of border-box</h3>
+    <div
+      style="
+        box-sizing: border-box;
+        color: white;
+        background-color: hotpink;
+        border: 10px solid yellow;
+        width: 500px;
+        height: 200px;
+        font-size: 1.2rem;
+        padding: 20px;
+      "
+    >
+      We give this div `border-box` value of box-sizing property
+    </div>
+    <p style="font-size: 1.2rem">
+      In above div we give <span style="color: red">height = 200px</span> and
+      <span style="color: red">width = 500px</span> after the property
+      <span style="color: red">box-sizing:border-box</span> and giving
+      <span style="color: red">padding = 20px</span> in all 4 direction and
+      <span style="color: red">border: 10px</span> also in 4 direction so this
+      was like this
+      <span style="color: red"
+        >height = 200 - 20 + 20 + 10 + 10 = 200 - 40 + 20 = 200 - 60 = 140
+      </span>
+      and
+      <span style="color: red"
+        >width = 050 - 20 + 20 + 10 + 10 = 500 - 40 + 20 = 500 - 60 = 440</span
+      >
+      so total height and width was <span style="color: red">140 x 440</span>
+    </p>
+  </body>
+</html>
