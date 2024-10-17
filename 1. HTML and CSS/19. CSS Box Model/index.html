@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Box Model</title>
+  </head>
+  <body>
+    <h1>CSS Box Model</h1>
+    <!--! Every thing in web was create of box-model every website was create with box-model. -->
+    <!--* Every html element was wrap inside the box -->
+
+    <!--* In box-model we have 4 layer -->
+    <!--? 1st.) Margin : Margin was most outer layer of box-model. -->
+    <!--? 2nd.) Border : Border was the second layer after margin. -->
+    <!--? 3rd.) Padding : Padding was the third layer after border. -->
+    <!--? 4th.) Content box : Content box the inner layer in which our content we define this content box we give width and height.-->
+
+    <h2>Layers of Box Model</h2>
+    <ul style="font-size: 1.2rem">
+      <li>
+        <span style="color: red">Margin :</span> Margin was most outer layer of
+        box-model.
+      </li>
+      <li>
+        <span style="color: red">Border :</span> Border was the second layer
+        after margin.
+      </li>
+      <li>
+        <span style="color: red">Padding: </span> Padding was the third layer
+        after border.
+      </li>
+      <li>
+        <span style="color: red">Content box :</span> Content box the inner
+        layer in which our content we define this content box we give width and
+        height.
+      </li>
+    </ul>
+    <h3>Visualization of Box Model</h3>
+    <div style="border: 4px dotted black; width: 500px; padding: 20px">
+      <p
+        style="
+          color: red;
+          font-size: 1.2rem;
+          font-weight: 500;
+          text-align: center;
+        "
+      >
+        Margin
+      </p>
+      <div style="border: 4px solid black; width: 400px; padding: 30px">
+        <p
+          style="
+            color: red;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+          "
+        >
+          Border
+        </p>
+        <div style="border: 4px dotted black; width: 300px; padding: 40px">
+          <p
+            style="
+              color: red;
+              font-size: 1.2rem;
+              font-weight: 500;
+              text-align: center;
+            "
+          >
+            Padding
+          </p>
+          <div style="border: 4px solid black; width: 200px; padding: 50px">
+            <p
+              style="
+                color: red;
+                font-size: 1.2rem;
+                font-weight: 500;
+                text-align: center;
+              "
+            >
+              Content Box : Height X Width
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Let see all layer of box-model from { inner layer to outer layer }</h3>
+    <h3>Content Box</h3>
+    <p style="font-size: 1.2rem">
+      This <span style="color: red">content box</span> contain our content of
+      our webpage or website or web-application and we can define the
+      <span style="font-weight: 600">height</span> and
+      <span style="font-weight: 600">width</span> of this section.
+    </p>
+    <h3>Example of content-box</h3>
+    <div
+      style="
+        width: 300px;
+        height: 200px;
+        background-color: crimson;
+        color: white;
+        padding: 20px;
+        font-size: 1.3rem;
+      "
+    >
+      Example of content box defining the height and width of this box.
+    </div>
+    <h3>Padding property</h3>
+    <p style="font-size: 1.2rem">
+      <span style="color: red">padding property</span> was help to give some
+      padding or some spaces from the edges of our box or separate our content
+      from the edges of our box.
+    </p>
+    <h3>Example of padding property</h3>
+    <p
+      style="
+        background-color: coral;
+        color: white;
+        padding: 20px;
+        width: 400px;
+        font-size: 1.2rem;
+      "
+    >
+      This paragraph we give padding of 20px
+    </p>
+    <h3>border property</h3>
+    <p style="font-size: 1.2rem">
+      This <span style="color: red">border</span> property was used to give
+      border to our box.
+    </p>
+    <h3>Let see example of giving border property individually</h3>
+    <div
+      style="
+        border-width: 6px;
+        border-style: solid;
+        border-color: yellow;
+        width: 1000px;
+        font-size: 1.2rem;
+        background-color: coral;
+        color: white;
+        padding: 20px;
+      "
+    >
+      We give
+      <span style="color: purple; font-weight: 600">border-width</span> property
+      to this 6px.
+      <br />
+      <br />
+      We give
+      <span style="color: purple; font-weight: 600">border-style</span> property
+      there are lot of border-style but we give solid which was default and
+      mainly used that only. <br /><br />
+      We give
+      <span style="color: purple; font-weight: 600">border-color</span> property
+      to give border color yellow to this html element.
+    </div>
+
+    <h3>border-property short-hand</h3>
+    <div
+      style="
+        width: 1000px;
+        border: 5px solid goldenrod;
+        color: gold;
+        background-color: crimson;
+        padding: 20px;
+        font-size: 1.2rem;
+      "
+    >
+      In this we give border short-hand property in which first we give
+      "border-width" than "border-color" at last "border-color".
+      <br />
+      <code style="color: white">border : 5px solid goldenrod</code>
+    </div>
+    <h3>border short hand property individually</h3>
+    <div
+      style="
+        color: white;
+        background-color: orange;
+        border-top: 4px dotted darkcyan;
+        width: 600px;
+        font-size: 1.2rem;
+        padding: 10px;
+      "
+    >
+      We give this <code>border-top</code> property only with dotted border
+    </div>
+    <br />
+    <br />
+    <div
+      style="
+        color: white;
+        background-color: orange;
+        border-right: 6px double darkcyan;
+        width: 600px;
+        height: 100px;
+        font-size: 1.2rem;
+        padding: 10px;
+      "
+    >
+      We give this <code>border-right</code> property only with double style
+      border.
+    </div>
+    <br />
+    <br />
+    <div
+      style="
+        color: white;
+        background-color: orange;
+        border-bottom: 4px dashed darkcyan;
+        width: 600px;
+        font-size: 1.2rem;
+        padding: 10px;
+      "
+    >
+      We give this <code>border-bottom</code> property only with dashed border
+    </div>
+    <br />
+    <br />
+    <div
+      style="
+        color: white;
+        background-color: orange;
+        border-left: 4px groove darkcyan;
+        width: 600px;
+        height: 100px;
+        font-size: 1.2rem;
+        padding: 10px;
+      "
+    >
+      We give this <code>border-left</code> property only with groove border
+    </div>
+    <h3>Mixed border-style border</h3>
+    <div
+      style="
+        width: 600px;
+        height: 300px;
+        background-color: darkcyan;
+        border-top: 5px solid orange;
+        border-bottom: 5px dashed hotpink;
+        border-left: 5px double darkred;
+        border-right: 5px dotted yellow;
+      "
+    ></div>
+    <h3>Margin property</h3>
+    <p style="font-size: 1.2rem">
+      <span style="color: red">margin property</span> was also work same as
+      padding property to but it create distance between html elements or
+      separate html elements from each other.
+    </p>
+    <h3>Example of margin property</h3>
+    <h4>Example one</h4>
+    <div
+      style="
+        background-color: crimson;
+        font-size: 1.2rem;
+        padding: 20px;
+        width: 200px;
+        color: white;
+        border: 3px solid gold;
+      "
+    >
+      First
+    </div>
+    <div
+      style="
+        background-color: hotpink;
+        font-size: 1.2rem;
+        padding: 20px;
+        color: white;
+        width: 200px;
+        border: 3px solid teal;
+      "
+    >
+      Second
+    </div>
+    <p style="font-size: 1.2rem">
+      In this above example we don't use margin property
+    </p>
+    <div
+      style="
+        background-color: crimson;
+        font-size: 1.2rem;
+        padding: 20px;
+        width: 200px;
+        color: white;
+        border: 3px solid gold;
+        margin: 20px;
+      "
+    >
+      First
+    </div>
+    <div
+      style="
+        background-color: hotpink;
+        font-size: 1.2rem;
+        padding: 20px;
+        color: white;
+        width: 200px;
+        border: 3px solid teal;
+        margin: 20px;
+      "
+    >
+      Second
+    </div>
+    <p style="font-size: 1.2rem">
+      Now in above example we use margin property in which we give 20px so that
+      it separate with each other in 20px in all direction.
+    </p>
+  </body>
+</html>
