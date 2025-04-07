@@ -1,1 +1,2 @@
 # HTML - The Essentials
+In this HTML Essentials section, we explore what HTML is, why it's used for building webpages, what a markup language means, and various essential HTML tags along with their commonly used attributes. We also cover the basic structure of an HTML document. All the fundamentals are included in this essentials guide.
