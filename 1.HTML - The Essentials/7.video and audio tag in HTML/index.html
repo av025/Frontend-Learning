@@ -1,0 +1,28 @@
+<!--* We can add Video and Audio in our HTML document also same like image we embeded HTML provides the special tags for video and audio purpose also let see tags one by one -->
+
+<!--? 1st. Video tag -->
+<!-- This video tag help to embeded the media player so we can add video in our html docuemnt -->
+ <video src="./video/Video-737.mp4" controls></video>
+ <!--? In this video tag we also have the attributes which help to embed the video and controls the input for our video -->
+ <!--* src attribute : src attribute was used to add link of any video for absolute path and add path of video for relative path  -->
+ <!--* controls attribute : This controls attribute was important attribute without this attribute we cannot play our video it give use the play and pause button functionality to our video -->
+
+<!--! In HTML Document there was three type of video format was supported which we can add all three format of video with the help of source tag  -->
+<!-- let see example of source tag --> 
+ <!--! Mainly we use three format was MP4 , WEBM , OOG Video Format -->
+ <video controls>
+    <source type="video/mp4" src="./video/Charde Suraj Dhale Vekhe - Tuchi Raina - Baba Bulle Shah Kalam_2.mp4"> 
+    <!--* Here first was mp4 format video we adding in our source tag and this video tag take first source as default format after that we add fallback as other format if the video was not work properly or not render.-->
+    <!--* WEBM Video Format -->
+    <source type="video/webm" src="./video/Charde Suraj Dhale Vekhe - Tuchi Raina - Baba Bulle Shah Kalam_2.webm">
+ </video>   
+
+<!--? Audio Tag -->
+<!-- Similarly like video tag we embed media player similarly we can embed audio player with the help of audio tag. -->
+ <audio src="./audio/128-Sambhaal Rakhiyaan - Neeti Mohan 128 Kbps.mp3" controls autoplay></audio>
+ <!--! In HTML Document we add three mp3 format first was mp3, WAV, and OGG -->
+ <audio controls>
+    <!--Here also first format was use as default -->
+    <source type="audio/mp3" src="./audio/128-Sambhaal Rakhiyaan - Neeti Mohan 128 Kbps.mp3">
+    <source type="audio/wav" src="./audio/128-Sambhaal Rakhiyaan - Neeti Mohan 128 Kbps.wav">
+ </audio>
