@@ -1,1 +1,2 @@
-# HTML - Diving Deeper and Semantics
+# HTML - Diving Deeper and Semantics 
+In this section, we learn about semantic tags, which help improve the readability and maintainability of our HTML code. Semantic tags are also beneficial for SEO (Search Engine Optimization) and enhance the accessibility of web pages. These tags are used based on the context and meaning of the content. For example, we use the <h1> tag for the main heading and the <a> (anchor) tag for adding links to our web pages.
