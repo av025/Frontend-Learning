@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding validations to our form element</title>
+</head>
+<body>
+    <!--* There was more attributes which add validations to our form elements. -->
+    <form>
+        <input type="text" placeholder="First Name" name="first-name" autofocus/>
+        <!--* This attribute autofocus will give the default border or point our focus to this particular input field whenever we refresh the page so the usecase of this autofocus element was it used to show the start of our form or some important input field we want to focus. -->
+        <input type="text" placeholder="Last Name" name="last-name"/>
+        <input type="number" placeholder="Age" name="user-age" min="18" max="60"/>
+        <!--? this number input type we give the two more attribute which was "min" & "max" which give more control to our input field let understand this "min" and "max" attribute what do  -->
+        <!--* min attribute : this min attribute set the minimum value to input by user in above input field we set minimum value was 18  -->
+        <!--* max attribute : Similarly like setting minimum value we can set the maximum value also so in above number input field we set the maximum value also. which was 60 -->
+        <!--! This min & max attribute also give the validation also if we enter wrong input means outside the range of this min to max. -->
+        <input type="email" placeholder="email" name="user-email"  required/>
+        <!--? This required attribute was most important attribute in among all input tags attribute now it adds validation check if the user input in this email input or not if not than it give the pop-up in which written this field was required -->
+        <input type="password" placeholder="Password" name="password" />
+        <input type="text" placeholder="Address" name="user-address" maxlength="50" size="60"/>
+        <!--* With the help of "size attribute" we can define the width of the input field. -->
+
+        <input type="submit" value="submit Form">
+    </form>
+</body>
+</html>
