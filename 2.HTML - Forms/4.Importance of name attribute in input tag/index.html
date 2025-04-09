@@ -1,0 +1,23 @@
+<!--* Importance of "name attribute" in input tag -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>name attribute in input tag</title>
+</head>
+<body>
+    <form>
+        <!--* Here we used three text input -->
+        <!--! Now when we submit this user input data to where the logic handle this input data than how they identity which data comes from that particular field. -->
+        <!--* If we input wrong data in the field for example in first-name input field we write the last-name and in last-name input field we write the first-name. so for that we have to use "name attribute" which was unique identifier for fields for form submit. -->
+        <!--* 1st. input for first name -->
+        <input type="text" placeholder="First Name" name="first-name"/>
+        <!--* 2nd. input for last name -->
+        <input type="text" placeholder="Last Name" name="last-name" />
+        <!--* 3rd. input for Address -->
+        <input type="text" placeholder="Address" name="address" />
+        <input type="submit" value="Click on Me !!!"/>
+    </form>
+</body>
+</html>
