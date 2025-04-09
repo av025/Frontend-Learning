@@ -1,1 +1,6 @@
 # HTML - Advanced Concept
+In this HTML Advanced section, we learn two important concepts. The first is the **DOM Tree**. When HTML tags are rendered in the browser, the browser parses them into a **Document Object Model (DOM)** — a tree-like structure where each parent element can have multiple child elements. This process converts HTML tags into **HTML elements** that the browser can understand and manipulate.
+
+The second concept involves the **`id`** and **`class`** attributes, which are two of the most commonly used attributes in HTML. The `id` attribute is used to uniquely identify a single HTML element and is helpful for both styling with CSS and scripting with JavaScript. Each `id` must be **unique** within the document.
+
+On the other hand, the `class` attribute is used to identify a **group of elements** that share the same styling or scripting behavior. Both `id` and `class` attributes are **case-sensitive**, meaning that uppercase and lowercase letters are treated differently. It is also a good practice to use **semantic and meaningful names** for these attribute values to improve code readability and maintainability.
