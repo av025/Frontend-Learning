@@ -1,0 +1,45 @@
+<!--* Understand the DOM Structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the DOM</title>
+</head>
+<body>
+    <!--? When this html tags render into broswer than this html tag contents was render on the screen so browser converts those html tags into HTML elements -->
+    <!--* Browser creates this HTML Elements into DOM "Document Object Model" Which was tree like structure in which we have n-array tree that means one parent have n-number of children in it. -->
+   <h1>Heading of DOM "Document Object Model"</h1>
+   <!--* Div one -->
+   <div>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, molestias?</p>
+   </div> 
+   <div>
+    <a href="#">Website Link</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolores, ipsum expedita cum corporis quasi error consequuntur numquam itaque excepturi?</p>
+   </div>
+</body>
+</html> 
+
+<!--! Let see our HTML Document, how browser create DOM of our html code -->
+
+<!--*            Document                    -->
+<!--*               |                        -->
+<!--*            HTML (root Parent)          -->
+<!--*               |                        -->
+<!--*               |                        -->
+<!--*      --------------------------        -->
+<!--*     |                         |        -->
+<!--*   Head                      Body       -->
+<!--*    |                         |         -->
+<!--*   title                      |         -->
+<!--*                    ----------------    -->
+<!--*                    |              |    -->
+<!--*                   div            div   -->
+<!--*                    |              |    -->
+<!--*                   p               |    -->
+<!--*                              --------- -->
+<!--*                             |        | -->
+<!--*                             a        p --> 
+
+<!--* Browser converts this HTML Elements into DOM "Document Object Model" Tree or we say that the HTML document when render on the browsser than broser parse the HTML elements and create the DOM "Document Object Model"  so that was called HTML broser parsing--> 
