@@ -87,6 +87,62 @@
         <td>Other <input type="radio" name="user-gender" value="other" /></td>
         <!--* With the help of name attribute we connect this three field for one input which was gender so our server identify and understand that this field was related to gender. -->
       </tr>
+      <tr>
+        <td><label for="address">Address : </label></td>
+        <td>
+          <textarea
+            name="user-address"
+            id="address"
+            rows="5"
+            cols="25"
+            placeholder="Address"
+          ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <label for="pincode">Pincode : </label>
+        </td>
+        <td>
+            <input type="number" name="user-pincode" id="pincode" placeholder="Pincode">
+        </td>
+        <td>
+            <p>(6 digit Number)</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <label for="country">Country : </label>
+        </td>
+        <td>
+            <input type="text" name="user-country" id="country" value="India">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <span>Hobbies : </span>
+        </td>
+        <td>
+           <label for="singing">Singing : </label>
+            <input type="checkbox" name="hobbies" id="singing" value="Singing">
+        </td>
+        <td>
+         <label for="reading">Reading : </label>
+         <input type="checkbox" name="hobbies" id="reading" value="Reading">
+        </td>
+        <td>
+            <label for="dancing">Dancing : </label>
+            <input type="checkbox" name="hobbies" id="dancing" value="Dancing">
+        </td>
+        <td>
+            <label for="sketching">Sketching : </label>
+          <input type="checkbox" name="hobbies" id="sketching" value="Sketching">
+        </td>
+        <td>
+          <label for="others">Others : </label>          
+            <input type="checkbox" name="hobbies" id="others" value="Others">
+        </td>
+      </tr>
     </table>
   </body>
 </html>
