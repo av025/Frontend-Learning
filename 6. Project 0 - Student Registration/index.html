@@ -7,142 +7,233 @@
   </head>
   <body>
     <h1 align="center">Student Registration Form</h1>
-    <table align="center" cellpadding="8">
-      <!--* Here we use the align attribute to align our html element horizontal means in left direction or in right direction or if we want in the center than we give value "center" to our align property. -->
-      <tr>
-        <td>
-          <!--* Here we use special tag which connect our input to it and give captions to our input field  -->
-          <label for="first-name">First Name : </label>
-          <!--? This label tag helps to associated with input tag to give captions with both visually and programmaticaly association when we connect our lable tag with input tag than if we click on the input field than it started focus on our input field -->
-          <!--! for attribute : This for attribute helps to connect our input tag to label tag by giving same value which we give in input id attribute with which we have to connect. -->
-        </td>
-        <td>
-          <input
-            type="text"
-            placeholder="First Name"
-            name="user-firstName"
-            id="first-name"
-            maxlength="40"
-          />
-        </td>
-        <td>
-          <p>(Max 40 Characters a-z to A-Z)</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label for="last-name">Last Name : </label>
-        </td>
-        <td>
-          <input
-            type="text"
-            name="user-lastName"
-            id="last-name"
-            placeholder="Last Name"
-          />
-        </td>
-        <td>(Max 40 Characters a-z to A-Z)</td>
-      </tr>
-      <tr>
-        <td>
-          <label for="dob">Date of Birth : </label>
-        </td>
-        <td>
-          <input type="date" id="dob" name="user-dob" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label for="email">Email : </label>
-        </td>
-        <td>
-          <input
-            type="email"
-            name="user=email"
-            id="email"
-            placeholder="Email"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td><label for="contact-number">Contact Number : </label></td>
-        <td>
-          <input
-            type="number"
-            name="user-contactNumber"
-            id="contact-number"
-            placeholder="Contact Number"
-          />
-        </td>
-        <td>
-          <p>(Enter 10 digit number)</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label for="gender"> Gender : </label>
-        </td>
-        <td>Male <input type="radio" name="user-gender" value="male" /></td>
-        <td>Female <input type="radio" name="user-gender" value="female" /></td>
-        <td>Other <input type="radio" name="user-gender" value="other" /></td>
-        <!--* With the help of name attribute we connect this three field for one input which was gender so our server identify and understand that this field was related to gender. -->
-      </tr>
-      <tr>
-        <td><label for="address">Address : </label></td>
-        <td>
-          <textarea
-            name="user-address"
-            id="address"
-            rows="5"
-            cols="25"
-            placeholder="Address"
-          ></textarea>
-        </td>
-      </tr>
-      <tr>
-        <td>
+    <form>
+      <table align="center" cellpadding="10">
+        <!--* Here we use the align attribute to align our html element horizontal means in left direction or in right direction or if we want in the center than we give value "center" to our align property. -->
+        <tr>
+          <td>
+            <!--* Here we use special tag which connect our input to it and give captions to our input field  -->
+            <label for="first-name">First Name : </label>
+            <!--? This label tag helps to associated with input tag to give captions with both visually and programmaticaly association when we connect our lable tag with input tag than if we click on the input field than it started focus on our input field -->
+            <!--! for attribute : This for attribute helps to connect our input tag to label tag by giving same value which we give in input id attribute with which we have to connect. -->
+            <input
+              type="text"
+              placeholder="First Name"
+              name="user-firstName"
+              id="first-name"
+              maxlength="40"
+            />
+            <span>(Max 40 Characters a-z to A-Z)</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="last-name">Last Name : </label>
+            <input
+              type="text"
+              name="user-lastName"
+              id="last-name"
+              placeholder="Last Name"
+            />
+            <span>(Max 40 Characters a-z to A-Z)</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob" name="user-dob" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email : </label>
+            <input
+              type="email"
+              name="user=email"
+              id="email"
+              placeholder="Email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="contact-number">Contact Number : </label>
+            <input
+              type="number"
+              name="user-contactNumber"
+              id="contact-number"
+              placeholder="Contact Number"
+            />
+            <span>(Enter 10 digit number)</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender"> Gender : </label>
+            <label for="male">Male : </label>
+            <input type="radio" name="user-gender" value="male" id="male" />
+            <label for="female">Female : </label>
+            <input type="radio" name="user-gender" value="female" id="female" />
+            <label for="other">Other : </label>
+            <input type="radio" name="user-gender" value="other" id="other" />
+          </td>
+          <!--* With the help of name attribute we connect this three field for one input which was gender so our server identify and understand that this field was related to gender. -->
+        </tr>
+        <tr>
+          <td>
+            <label for="address">Address : </label>
+            <textarea
+              name="user-address"
+              id="address"
+              rows="5"
+              cols="25"
+              placeholder="Address"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
             <label for="pincode">Pincode : </label>
-        </td>
-        <td>
-            <input type="number" name="user-pincode" id="pincode" placeholder="Pincode">
-        </td>
-        <td>
-            <p>(6 digit Number)</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
+            <input
+              type="number"
+              name="user-pincode"
+              id="pincode"
+              placeholder="Pincode"
+            />
+            <span>(6 digit Number)</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
             <label for="country">Country : </label>
-        </td>
-        <td>
-            <input type="text" name="user-country" id="country" value="India">
-        </td>
-      </tr>
-      <tr>
-        <td>
+            <input type="text" name="user-country" id="country" value="India" />
+          </td>
+        </tr>
+        <tr>
+          <td>
             <span>Hobbies : </span>
-        </td>
-        <td>
-           <label for="singing">Singing : </label>
-            <input type="checkbox" name="hobbies" id="singing" value="Singing">
-        </td>
-        <td>
-         <label for="reading">Reading : </label>
-         <input type="checkbox" name="hobbies" id="reading" value="Reading">
-        </td>
-        <td>
-            <label for="dancing">Dancing : </label>
-            <input type="checkbox" name="hobbies" id="dancing" value="Dancing">
-        </td>
-        <td>
-            <label for="sketching">Sketching : </label>
-          <input type="checkbox" name="hobbies" id="sketching" value="Sketching">
-        </td>
-        <td>
-          <label for="others">Others : </label>          
-            <input type="checkbox" name="hobbies" id="others" value="Others">
-        </td>
-      </tr>
-    </table>
+            <label for="singing">Singing </label>
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="singing"
+              value="Singing"
+            />
+
+            <label for="reading">Reading </label>
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="reading"
+              value="Reading"
+            />
+
+            <label for="dancing">Dancing </label>
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="dancing"
+              value="Dancing"
+            />
+
+            <label for="sketching">Sketching </label>
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="sketching"
+              value="Sketching"
+            />
+
+            <label for="others">Others </label>
+            <input type="checkbox" name="hobbies" id="others" value="Others" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span> Qualification </span>
+          </td>
+          <td>
+            <!--* We write nested table means table inside table. -->
+            <table align="left">
+              <thead>
+                <tr>
+                  <th colspan="5">Please add your data ....</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="center">Sr. No</td>
+                  <td align="center">Examination</td>
+                  <td align="center">Board/University</td>
+                  <td align="center">Percentage</td>
+                  <td align="center">Year of Passing</td>
+                </tr>
+                <tr>
+                  <td align="center">1.</td>
+                  <td align="center">Class X</td>
+                  <td align="center">
+                    <input type="text" placeholder="Board/University" />
+                  </td>
+                  <td align="center">
+                    <input type="number" placeholder="Percentage" />
+                  </td>
+                  <td align="center">
+                    <input type="number" placeholder="Year of Passing" />
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">2.</td>
+                  <td align="center">Class XII</td>
+                  <td align="center">
+                    <input type="text" placeholder="Board/University" />
+                  </td>
+                  <td align="center">
+                    <input type="number" placeholder="Percentage" />
+                  </td>
+                  <td align="center">
+                    <input type="number" placeholder="Year of Passing" />
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">3.</td>
+                  <td align="center">Graduation</td>
+                  <td align="center">
+                    <input type="text" placeholder="Board/University" />
+                  </td>
+                  <td align="center">
+                    <input type="number" placeholder="Percentage" />
+                  </td>
+                  <td align="center">
+                    <input type="number" placeholder="Year of Passing" />
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">4.</td>
+                  <td align="center">Masters</td>
+                  <td align="center">
+                    <input type="text" placeholder="Board/University" />
+                  </td>
+                  <td align="center">
+                    <input type="number" placeholder="Percentage" />
+                  </td>
+                  <td align="center">
+                    <input type="number" placeholder="Year of Passing" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" />
+          </td>
+          <td>
+            <input type="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
   </body>
 </html>
