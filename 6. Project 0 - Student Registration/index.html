@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1 align="center">Student Registration Form</h1>
-    <table align="center">
+    <table align="center" cellpadding="8">
       <!--* Here we use the align attribute to align our html element horizontal means in left direction or in right direction or if we want in the center than we give value "center" to our align property. -->
       <tr>
         <td>
@@ -50,6 +50,42 @@
         <td>
           <input type="date" id="dob" name="user-dob" />
         </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Email : </label>
+        </td>
+        <td>
+          <input
+            type="email"
+            name="user=email"
+            id="email"
+            placeholder="Email"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="contact-number">Contact Number : </label></td>
+        <td>
+          <input
+            type="number"
+            name="user-contactNumber"
+            id="contact-number"
+            placeholder="Contact Number"
+          />
+        </td>
+        <td>
+          <p>(Enter 10 digit number)</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="gender"> Gender : </label>
+        </td>
+        <td>Male <input type="radio" name="user-gender" value="male" /></td>
+        <td>Female <input type="radio" name="user-gender" value="female" /></td>
+        <td>Other <input type="radio" name="user-gender" value="other" /></td>
+        <!--* With the help of name attribute we connect this three field for one input which was gender so our server identify and understand that this field was related to gender. -->
       </tr>
     </table>
   </body>
