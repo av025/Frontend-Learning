@@ -1,0 +1,15 @@
+/*! class attribute selector or class selector */
+/** With the help of class attribute we can select the group of elements and apply styling on them if we want to give same styling to multiple html elements. */ 
+
+/*! We access the class selector with the help of dot operator */
+.color-red{
+    color: white;
+    font-size: 20px;
+}  
+
+body {
+    background-color: black;
+    color: gold;
+
+}
+
