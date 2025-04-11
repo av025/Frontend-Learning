@@ -1,0 +1,16 @@
+/*! As we know that universal selectors are use to select all the html elements from our webpage and do common styling to all elements which was default styling and that was change by other selector like type or element selector */ 
+
+/*? Universal selector */
+* {
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    /* So as we give default background color black , text color white and x-larger fontsize to all the html element in our document. */
+}
+
+
+/*? Type selector */
+p {
+    background-color: crimson;
+    color: gold;
+}
