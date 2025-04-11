@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font-size and style sheets</title>
+    <!--! Instead of Inline CSS we are giving Internal CSS -->
+    <!--* We give internal CSS in head with the help of "style tag" -->
+    <style>
+       /* Lets write first css property of span tag */
+       span {
+            font-size: 30px;
+       }
+       /* above was html element selector with the help of this we can select all the same group of html element and style all of them commonly. */
+    </style>
+    <!--? For inline we use "style attribute" and for internal css we use "style tag"-->
+
+    <!--! We can use External CSS also in which we write our styling separately means in .css extension file so here we can't mixup our css code in html which was we see that with the help of internal css that we write our css inside the html code only. -->
+    <link rel="stylesheet" href="style.css">
+    <!--? We link our External CSS with link tag which help to link external files. -->
+</head>
+
+  <body>
+    <h2>Aayush Vyas</h2>
+    <!--* The inline css giving to all elements was literally the bad idea and we write all css property for all the html element individually the create our work tideous. -->
+    <span>Software Engineer | </span>
+    <span>Learner |</span>
+    <span> Tech enthusiast </span>
+    <p>I love to build and learning new technology in Tech</p>
+    <h3>Frontend Technologies</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>React-JS</li>
+    </ul>
+  </body>
+</html>
