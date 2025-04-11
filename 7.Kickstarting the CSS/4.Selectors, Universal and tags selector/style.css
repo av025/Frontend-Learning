@@ -1,0 +1,30 @@
+/*! What was Selector in CSS ? */
+/* Selectors help to target the bunch of the html element this mechanism provide by css to style our html elements let see example */
+/* ? If we want to style all the paragraphs of our html file than we use selector mainly element selector. */
+p{
+    color: white;
+    font-size: 20px;
+} 
+
+/*! Types of Selectors */
+/* Let see types of Selectors */ 
+
+/*? 1st. Universal Selector "*" */
+/* We use Universal Selector to select or target all the html elements of our html document when we giving styling with the help of universal selectors than all elements got the same styling default. */ 
+/*! We denote the universal selector with the help "*" Asterik */
+
+/* syntax of universal Selector */
+* {
+    background-color: #400036;
+    color: coral;  
+    /* Here this azure color was not applied because the specificity was low to element selector that's why */
+} 
+
+/*?  type selector or Element selector */
+/* With the help of type selector or element selector we can select all the group of specific type of html element */
+p {
+    color: gold;
+    background-color: crimson;
+
+}
+/** With the help of element selector or type select we target all p tags from our webpage and do styling. */
