@@ -1,0 +1,66 @@
+/*! Combinator Selectors */
+/* We can combine the two selectors and style our html element with the help of combinators */
+/*? There was many types of combinators  */
+
+/*? Descendant combinator selector */
+/* With the help of the descendant selector we can select all the children element of the parent element we want to target and apply styling let undersatand with example  */ 
+
+/*? first we select our parent element than we give "space for targeting elemnt with the descendant selector" */
+
+/* parent children */
+#first-division p {
+    font-size: 20px;
+    background-color: crimson;
+    color: gold;
+} 
+
+/** Above we combine two selectors first was id-selector and second was type selector or element selector */
+
+/* parent's parent children */
+#second-division p span {
+    color: darkmagenta;
+    font-size: 20px;
+} 
+/** Here we use descendant element to select the grand-parent -> parent -> span element */ 
+
+/* parent's parent parent children */
+#third-division p span a {
+    color: red;
+    font-size: 16px;
+} 
+
+/*? Child selector combinator */
+/* With the help of child combinator we can select the target direct means direct children of our parent element and apply styling on it. */
+
+/*! We use greater than operator for child combinator selector */
+#fourth-division > p {
+    background-color: sienna;
+    font-size: 30px;
+} 
+
+
+/*? Subsequent-sibling combinator selector */
+/* With the help of this Subsequent sibling combinator selector we can select the next sibling element of the specific html element and apply all the that next-sibling elements which comes after that specific element. but main point both are siblings. */ 
+
+/*? We use tilde symbol "~" for subsequent-sibling combinator selector */
+#fifth-division  h3~p {
+    color: whitesmoke;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.874);
+} 
+/*? Here we target here the next sibling of h3 which was p in everywhere if they was sibling to each other than our styling was applied on all the children p element. */
+
+#fifth-division p~ol {
+    color: chocolate;
+    font-size: 18px;
+}
+
+
+/*? Next Sibling Combinator Selector */
+/* With the help of Next Sibling Combinator Selector we can target the next adjacent sibling element or next immidiate next sibling to apply styling to that. */
+
+/*? We use the '+' operator to target next sibling combinator selector */
+#sixth-division h3 + p {
+    color: teal;
+    font-size: 20px;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant, child, adjacent and general sibling combinator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Combinators Selectors</h1>
+    <h2>Descendant combinator selectors</h2>
+    <!--* Descendant combinator -->
+    <!-- Let see example of Descendant combinator -->
+    <!-- First example -->
+    <div id="first-division">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A hic at labore
+        dicta, eius neque quas expedita porro nam voluptatum!
+      </p>
+      <p>
+        Quam incidunt deserunt expedita ratione perferendis ipsam reiciendis
+        exercitationem quae tenetur, fugiat reprehenderit vel vero, qui
+        explicabo eveniet, quibusdam temporibus.
+      </p>
+      <p>
+        Itaque quisquam tempore quibusdam molestias placeat et reiciendis
+        officia sit provident, obcaecati inventore numquam exercitationem
+        facilis cupiditate quaerat veniam dolor.
+      </p>
+    </div>
+    <!-- Second example -->
+    <div id="second-division">
+      <p>
+        <span
+          >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
+          ipsum omnis ex saepe optio alias inventore non id officia rerum
+          recusandae et voluptatum sequi dolorum veritatis fugiat iste, natus
+          quae?</span
+        >
+      </p>
+      <p>
+        <span
+          >Possimus omnis nobis dolore doloremque, enim saepe corrupti
+          repudiandae optio tempore blanditiis libero assumenda provident
+          ducimus tenetur nulla pariatur quas! Expedita perspiciatis temporibus
+          quod illo consequuntur, commodi culpa animi beatae?</span
+        >
+      </p>
+      <p>
+        <span
+          >Aut vitae temporibus dolorem explicabo aliquid natus dolor voluptates
+          unde necessitatibus quis ratione adipisci et, nobis hic veritatis
+          ipsam accusantium quia nemo exercitationem sunt, animi repudiandae
+          maxime, dignissimos voluptatum. Voluptates!</span
+        >
+      </p>
+      <p>
+        <span
+          >Quos numquam labore illum eum corporis aperiam repudiandae pariatur
+          mollitia ea, ullam cum dolorem suscipit iure eligendi reprehenderit
+          consequatur aut esse placeat nemo, odio laboriosam. Sunt autem cum quo
+          officiis.</span
+        >
+      </p>
+    </div>
+    <!-- Third division -->
+    <div id="third-division">
+      <p>
+        <span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+          obcaecati tempora nesciunt atque consectetur blanditiis odio tempore
+          facere voluptas omnis ab voluptates adipisci dicta corporis enim,
+          ipsam quis quidem cupiditate quaerat vel excepturi delectus, culpa hic
+          at. Delectus, repudiandae facilis.<a href="#">Lorem, ipsum.</a>
+        </span>
+      </p>
+
+      <p>
+        <span>
+          Tenetur accusantium vitae soluta eveniet doloremque ea, odit mollitia
+          ipsam facere dolores commodi cumque numquam fuga suscipit blanditiis
+          reiciendis et in atque delectus officiis alias. Illo dolores
+          reprehenderit minus nostrum quaerat modi vero fuga dolor asperiores
+          ipsa et, at recusandae!<a href="#">Placeat, consequuntur. </a>
+        </span>
+      </p>
+      <p>
+        <span>
+          Modi esse accusamus ex, adipisci aut enim, sit natus praesentium animi
+          eaque doloribus eligendi debitis molestias ratione? Molestiae eaque
+          sapiente deserunt incidunt a officia architecto nemo qui natus tempore
+          aliquid, commodi impedit, rerum autem recusandae fuga, necessitatibus
+          doloremque ab harum!<a href="">Explicabo, quod.</a>
+        </span>
+      </p>
+      <p>
+        <span>
+          Libero consectetur illo magnam quisquam, aperiam laudantium autem a
+          reprehenderit velit iste iusto earum vel pariatur repudiandae
+          assumenda cum maxime aspernatur praesentium sunt. Totam recusandae,
+          aut excepturi doloribus similique beatae perferendis sit temporibus
+          quasi alias blanditiis, ipsum praesentium optio repellat!<a href="#"
+            >Esse, commodi.</a
+          >
+        </span>
+      </p>
+    </div>
+    <h2>Child combinator selector</h2>
+    <!-- Let understand the child selector with example -->
+    <div id="fourth-division">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam iure,
+        obcaecati minus voluptas repellat
+        <div>
+          soluta itaque quisquam sequi in a? Doloribus quaerat rem quas nihil
+          modi porro consectetur dolores fugiat vitae assumenda,
+        </div>
+        ipsa autem voluptatum maxime maiores rerum provident veritatis?
+      </p>
+      <p>
+        Est consequuntur dolorum ducimus. Error voluptatem temporibus accusamus
+        soluta ipsam, assumenda est excepturi ipsum autem iusto aut laudantium
+        <div>
+          corporis, eaque officiis exercitationem aliquid. Doloribus minus
+        </div>
+        incidunt facilis a similique, eius necessitatibus unde deleniti, quam
+        veritatis natus voluptatum nesciunt architecto corporis!
+      </p>
+      <p>
+        Magni impedit, nostrum dicta incidunt reprehenderit ducimus corrupti
+        quas dignissimos libero
+        <div>
+          tempore a sapiente fugit. Ea, iusto aliquam iste reiciendis delectus
+          illo quae modi dolore ad perferendis ullam atque velit id perspiciatis
+          distinctio porro dolor corporis eligendi pariatur
+        </div>
+        unde doloribus.
+      </p>
+    </div>
+    <h2>Subsequent Sibling combinator selector</h2>
+    <div id="fifth-division">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ut rem aut temporibus quas a et amet fugiat rerum nobis?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, culpa ex ratione, beatae atque deserunt dicta maiores dolorem cupiditate quo quidem. Soluta necessitatibus labore quasi quisquam adipisci tempore ducimus quas mollitia eius quos, reprehenderit nisi libero expedita minima unde numquam provident delectus amet? Minima et alias hic, dicta voluptate architecto natus enim repellendus tempore. Dolorum repellat sapiente obcaecati vel esse?</p>
+        <ol>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quo tempore suscipit possimus dolore molestiae quisquam itaque blanditiis doloremque sint?</li>
+            <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus recusandae distinctio, expedita fugiat pariatur inventore porro excepturi ea eos vitae.
+            </li>
+        </ol>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dicta quod ipsum placeat quia tempore quam ea eos illum, hic, voluptates iure, quisquam labore. Odit eligendi placeat fugit velit perspiciatis ut, eius iure, inventore consequatur quod soluta reiciendis, qui quas.</p>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus.</li>
+            <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veritatis ipsum ullam error porro ratione officia quaerat soluta dolore praesentium veniam quas amet doloribus, at fugit assumenda perspiciatis nemo temporibus?
+            </li>
+        </ul>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt veniam, explicabo quaerat laboriosam amet nesciunt.</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste expedita rerum obcaecati. Minus aperiam nesciunt, numquam omnis quae quasi cupiditate animi alias cum nihil deserunt officia ad sed ab corrupti, deleniti harum qui amet odit, libero corporis quod eius? Deleniti, quos enim! Numquam repellendus odio iusto doloremque officia? Officiis reprehenderit dolorum alias natus voluptatum. Delectus aliquam nobis officiis assumenda asperiores.</p>
+        <ol>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id at modi aspernatur laudantium velit quaerat eaque aperiam eveniet aliquam maxime.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime exercitationem nesciunt sed, eligendi soluta voluptatem velit architecto! Dolorum, hic reiciendis.</li>
+        </ol>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt alias fugiat ipsam ut, cumque sapiente fugit temporibus quo provident similique aliquam corporis dolorem? Laborum sed rem, quod commodi consequatur nihil quia labore ipsa voluptatum quibusdam dolores dignissimos eos illum minus. Illo, earum possimus quo harum similique voluptates pariatur explicabo quam provident nesciunt necessitatibus, exercitationem iusto est asperiores fugit itaque!</p>
+    </div>
+    <h2>Next Sibling Combinator Selector</h2>
+    <!-- Let understand with example  -->
+     <div id="sixth-division">
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fugit tempora labore optio vero, dignissimos assumenda nihil, iusto laudantium expedita officiis officia voluptate corporis sed architecto ab error repellendus corrupti.</p>
+        <div>
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae rem tempore officia consequuntur ipsam quo aliquam autem, inventore distinctio deserunt iure. Neque nesciunt quae minus ut nobis, illo provident deleniti repudiandae quos pariatur dolorem, corrupti blanditiis omnis. Aspernatur repellat sed veritatis ea officiis non unde necessitatibus minima! Eligendi, repellat ullam voluptas in doloribus praesentium deserunt. Perferendis id delectus iure.</p>
+        </div>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, modi.</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In amet nostrum corrupti alias, natus totam eos fugit optio qui consequuntur blanditiis voluptatem, numquam illum molestias vero. Iusto tempore nesciunt iste distinctio! Animi dignissimos repellat eius officiis adipisci nobis iusto tempore!</p>
+     </div>
+  </body>
+</html>
