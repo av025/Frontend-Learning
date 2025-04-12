@@ -1,0 +1,21 @@
+/*! Attribute selector  */
+/* We can target our html element with the help of it's attribute also to apply styling */
+
+/*? Square brackets */
+/* We can use [ ] "Square brackets" to target that attribute element in our html document. */
+/* let see example */
+a[href="#"] {
+    color: navy;
+    font-size: xx-large;
+} 
+
+
+/*! list selector */
+/* Like grouping of elements we can do with class selector and than applying common styling on that similarly we can use list selector so we can create list or we can select html element with the help of comma separactor "," */
+
+div,p,a {
+    background-color: crimson;
+    font-size: 20px;
+    color: gold;
+}
+/** We select the div , p and a html element together as grouping or we say selector list */
