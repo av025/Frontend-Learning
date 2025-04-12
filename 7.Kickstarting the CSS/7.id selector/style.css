@@ -1,0 +1,18 @@
+* {
+    background-color: black;
+    color: #fff;
+}
+/*! id selector */
+/* With the use of id selector we can select the unique html element which we know the what id attribute was doing so we can apply styling to it sepeartely or uniquely. */ 
+
+/*? We use hashtag symbol to select or target id atteribute element */
+#main-heading {
+    font-size: 60px;
+    /*? Giving text-decoration underline */
+    text-decoration:2px solid underline;
+    /*? With the help of text-decoration css property we can give text decoration styling also */
+} 
+
+.paragraph-styling {
+    font-size: 20px;
+}
