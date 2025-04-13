@@ -1,0 +1,64 @@
+/*! Pseudo Classes */
+/** Pseudo classes are used to select the specific state of our element which was not present in our HTML element DOM Tree */  
+
+/*! We used the sem-colon ":" symbol to select the pseudo classes */
+
+/* ? Hover State */
+/* This hover state used when user or client hover on our link than we give styling to that or change the default styling. */
+.hover-state:hover {
+    color: teal;
+} 
+
+/*? Visited State  */
+/* This hover state used when we visited our link than our link text color was change. */
+.visited-state:visited{
+    color: violet;
+} 
+
+/*? Active State */
+/* This active state define when user press the mouse and check the link was active or not so it used for that */
+.active-state:active {
+    color: rgb(40, 220, 20);
+} 
+
+/*? Focus State */
+/* This focus state was used to focus our link when client press the mouse */
+.focus-state:focus{
+    color: aqua;
+    font-size: 20px;
+}  
+
+/*? first-child */
+#first-division p:first-child {
+    font-size: 20px;
+    color: teal;
+}
+/* With the help of this first-child pseudo class we can style the first child of our parent element. */
+
+#first-division p:last-child {
+    font-size: 20px;
+    color: crimson;
+}
+/* With the help of this last-child pseudo class we can style the last cgild of our parent element. */
+
+
+/*! Pseudo Elements */
+/** Pseudo-elements are used to style specific parts of an element or insert content that doesn’t exist in the HTML. */
+
+/*! We use double semi-colon "::" for peusdo elements  */
+
+/*? Let see the pseudo elements */ 
+
+/** before pseudo element */
+h2::before {
+    content:"Hello To everyone"
+}
+/*? With the help of ::before pseudo element we can add content to our html element without adding content to our html element before. */
+
+/** after pseudo element */
+h2::after {
+    content: " Aayush Vyas";
+}
+/*? With the help of ::after pseudo element we can add content from the last to our html element. */
+
+
