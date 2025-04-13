@@ -1,0 +1,121 @@
+/*! Revising the CSS Selector */
+/*? What is CSS Selector ?  */
+/* The CSS Selector are the mechanism or feature which helps to target our html element and with the help of that we can apply styling. */ 
+
+/* There are different type of selectors let revise those selectors also : */
+
+/*? 1st. Universal Selector */
+/* With the help of universal selector we can select every html element of our document and give default styling to all commonly. We use Asterik symbol "*" for universal selector */
+
+/*  let see example of universal selector */
+* {
+    font-size: 30px;
+    font-family: cursive;
+
+} 
+/* With the help of universal selector we can target every html element and apply common default styling   */ 
+
+/*? Type or element selector */
+/* With the help of type selector or html element selector we can target all the same type of all specific html element in our html docuement and apply styling commonly to all.  */  
+
+/*  let see the example */
+p {
+    font-size: 20px;
+    color: hotpink;
+} 
+
+
+/*? class selector */
+/* With the help of class selector we can select or target group of elements and apply common styling to all of them. We use dot operator "."  */
+
+/* let see the example of class selector */ 
+.class-selector-example {
+    color: rgb(188, 192, 71);
+    font-size: 18px;
+    background-color:teal;
+} 
+
+
+/*? id selector */
+/* We use id selector to select or target the html element and styling that element uniquely. We use hashtag symbol "#" */
+#id-selector-example {
+    background-color: black;
+    color: white;
+} 
+
+/*? Attribute Selector */
+/* So we have attribute selector also with the help of html attribute we can select and apply styling on to also. */
+/* with the help of square bracket "[ ]"  */ 
+
+/* let see example of our attribute selector */
+/* a[href] {
+    text-decoration: none;
+    font-size: 18px;
+    color: gold;
+} */
+/* With the help of html element attribute we can select and apply styling we can just give only attribute name or we can give it's value also if we want more particular appply styling to that element. */
+
+/*? selector list or grouping selector */
+/* With the help of selector list we can select or target the html element with the help of comma seperator so we can apply styling commonly to those elements */
+
+a,h1 {
+    background-color: #000;
+    color: white;
+}
+
+/*? combinator selectors */
+
+/** Descendant combinator selector */
+/* With the help of this descendant selector we can target any specific children element and apply styling to it for example if the parent element have p element as children than we can target every p element . first we give our parent element after that give "one space" and select whatever the child element we want to select.  */
+
+/* let see example of descendant selector example  */
+#first-division p {
+    font-size: 16px;
+    color: crimson;
+}
+
+/** Children Combinator selector */
+/* With the help of children combinator we style direct sibling of our parent element. We use greater than ">" symbol. */
+
+#third-division > h3 { 
+    color: sienna;
+
+}
+
+/** Subsequent-sibling combinator selector */
+/* With the help of this subsequent-sibling combinator selector we can select the the next or adjacent sibling of our parent sibling this style our all next or adjacent sibling element and it was sibling to than only styling was applied. */ 
+
+#fourth-division p~ul {
+    color: tomato;
+} 
+
+
+/** Next Sibling Combinator Selector  */
+/* With the help of next sibling combinator selector we can select the next immediate sibling or adjacent sibling to style our element  */ 
+h4 + ol {
+    color: gold;
+    background-color: crimson;
+}
+
+
+/*? Pseudo Classes */
+/* With the help of pseudo classes we can select the specific state which does not present in our html element DOM */
+
+/** We can use semi-colon ":" symbol for pseudo classes */
+#pseudo-classes:hover {
+    color: salmon;
+    text-decoration: underline wavy;
+} 
+
+
+/*? Pseudo elements */
+/* With the help of Pseudo elements we can add the content in our html element without present in our html element DOM */ 
+
+/** We use double semi-colon "::" symbol for pseudo elements */
+h2::before {
+    content: "A";
+}
+
+h2::after {
+    content: "C";
+}
