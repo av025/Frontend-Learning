@@ -1,0 +1,44 @@
+/* * { */
+    /* box-sizing: border-box; */
+    /* ! This was old style to giving individualy property to all our html element with the help of universal selector.  */
+/* }  */
+
+/* ? new version to use box-sizing was this :-  */
+html {
+    box-sizing: border-box;
+}
+/*! In above property we give box-sizing: border-box to our root element which was html element so our all element will got default box-sizing : border-box   */
+
+*, *:before,*:after {
+    box-sizing:inherit;
+}
+/*! Now instead of giving directly border-box property we want box-sizing property inherit by parent element that's why we use universal selector for all elements , pseduo element creating before and after the content. */
+/* todo  "This was new way to give box-sizing:border-box property in starting of our css style defautly. " */
+
+/*? Content Box */
+/* The default sizing of any box or we say html element was content-box only when we give any html element property box-sizing and value "content-box" so if you give height and width to that similarly we applied padding and border also to our html element than those adding padding and border was also add to our width an height respectively. */
+
+/*  Let understand with example */
+.content-box {
+    width: 600px;
+    height: 200px;
+    font-size: 20px;
+    color: royalblue;
+    padding: 20px;
+    border: 5px solid crimson;
+    /** giving default box-sizing property */
+    box-sizing: content-box;
+    /* When we give this property the border and padding width was adding to our original width and height additionaly so that's why we give box-sizing : border-box by universal selector */
+} 
+
+/*? Border Box */
+/* When we give our html element property box-sizing: border-box and than give the height and width property also and also give padding and border also than those padding and border widths was adjust to our original height and width only to adding additionally instead of that our content box height & width decreases so our original we provide height and width was not change */ 
+
+.border-box {
+    width: 600px;
+    height: 200px;
+    font-size: 20px;
+    padding: 20px;
+    color: rebeccapurple;
+    border: 5px solid violet;
+}
