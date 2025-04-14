@@ -1,0 +1,41 @@
+/* Let give the box-sizing property with universal selector */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before,*::after {
+    box-sizing: inherit;
+} 
+
+.element-first {
+  width: 400px;
+  height: 180px;
+  padding: 20px;
+  font-size: 18px;
+  border: 3px solid salmon;
+  color: hotpink;
+}
+
+/* This element first box-sizing border box was applied  */
+
+/*? Let overriden box-sizing property */
+.element-second {
+    /* content-box */
+    box-sizing: content-box;
+    width: 400px;
+    height: 180px;
+    padding: 20px;
+    font-size: 18px;
+    color: crimson;
+    border: 5px solid gold;
+
+}
+
+.element-second-child {
+    height: 50%;
+    width: 50%;
+    color: cadetblue;
+    border: 2px solid rosybrown;
+    padding: 10px;
+}
+/* With the help of giving universal selector box-sizing:inherit than we can give the same property to our child element by inheriting from parent element. */
