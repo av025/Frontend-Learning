@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep dive into Box Model in CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Deep dive into Box Model in CSS</h1>    
+    <!--? We have to understand one property of Box model was "box-sizing" which helps to define our html elements styling. -->
+
+    <!--! What was Box Model in the CSS ? -->
+    <!-- If we have to deal with css easily than we have to understand the box model very well and in-depth so whenever the browser render our html element below we take p element as an example so css will wrap our html element by Box.  -->
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ad cupiditate non fuga cumque ipsam, dolores amet sit ipsum sint reiciendis placeat praesentium? Officia id tempore beatae sit est veritatis dolorum, voluptate vitae? Debitis ab numquam error non ducimus, nostrum reprehenderit eligendi molestiae nisi sapiente. Quaerat natus quisquam ipsam aut provident, pariatur deserunt optio reprehenderit iure molestiae, asperiores sit cupiditate!</p>
+     <!--! This Wraping of Box which was not visiual in the screen was know as Box Model -->
+     <!-- The CSS Box Model is divided into several important parts, and understanding each of them is essential for working with layout and spacing in CSS. -->
+      <h2>Components of Box Model</h2>
+      <!-- Let understand with example.....  -->
+       <h3>1st. Content Box {height & Width Property}</h3>
+       <p class="content-box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur aperiam ratione velit harum et! Repellat laboriosam doloribus tenetur. Dolor temporibus totam deserunt architecto accusamus. Distinctio iusto cumque adipisci voluptatum.
+       </p>
+       <h3>2nd. Padding Property</h3>
+       <p class="padding-layer">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur aperiam ratione velit harum et! Repellat laboriosam doloribus tenetur. Dolor temporibus totam deserunt architecto accusamus. Distinctio iusto cumque adipisci voluptatum.
+       </p>
+       <h3>3. Border Property</h3>
+        <p class="border-layer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum tenetur possimus et nesciunt veritatis modi repudiandae, debitis reprehenderit molestiae. Voluptate quo ratione nostrum, nobis, magnam totam aspernatur fugit quia saepe sint, autem ipsum asperiores necessitatibus veniam dolor voluptatem assumenda illo minus hic cum tenetur eius. Doloremque eius sapiente nam saepe est expedita necessitatibus dignissimos, amet laudantium, beatae recusandae officia!</p> 
+        <h4>Border-radius Property</h4>
+        <div class="border-radius">
+            We applied this div border-radius
+        </div>
+        <h3>4. Margin Property</h3>
+        <div id="parent-div">
+            <div class="first-child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, accusamus.</div>
+            <div class="second-child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laborum repellat voluptatibus.</div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/*? Box Model in CSS */
+/* Let explore all the components and parts of box-model which complete it...  */
+
+/*! Starting with inner-layer of components */
+/*? 1st.Content Box */
+/* This was the actually we place our content and we give the height and styling to our content according our need. */
+
+.content-box {
+  background-color: crimson;
+  color: gold;
+  font-size: 18px;
+  height: 200px;
+  /* We give height of 200px to both top and bottom */
+  width: 300px;
+  /* We give width of 400px from both left-side & right-side. */
+}
+
+/*? 2. Padding */
+/* Padding is used to add space between the content and the edges (or border) of an HTML element. This makes the content look more clear, readable, and visually pleasant. */
+
+/* Let see example of our padding property giving to our html element and observe the difference between the content-box styling and than how it create the space internally to our content and it look better than that. */
+
+.padding-layer {
+  background-color: crimson;
+  color: gold;
+  font-size: 18px;
+  height: 200px;
+  width: 300px;
+  /* padding property  */
+  padding: 20px;
+  /* It give 20px of spacing from the corner of our html element in all four direction top, bottom , right and left */
+  padding-top: 10px; /* applying only top to 10px */
+  padding-right: 30px; /* applying padding from right  30px */
+  padding-bottom: 0px; /* applying padding from bottom 0 px*/
+  padding-left: 100px; /* applying padding from left which was 100px */
+
+  /*? Applying the all the direction property in single value  */
+  /* Always give direction to padding or border or margin in clockwise direction which above we give individual property like that only first top , than right , bottom at last we give left direction. */
+  padding: 20px 40px 60px 80px;
+}
+
+/*? Border layer */
+/* With the help of border we can define the border of our html element let understand by example how can we give border */
+
+.border-layer {
+  font-size: 20px;
+  width: 600px;
+  height: 200px;
+  background-color: goldenrod;
+  color: crimson;
+  padding: 20px;
+  /*? border property */
+  border: 5px solid orangered;
+  /* In above we applied the border to our element of 5px broad and border type was solid and color of border was orangered. */
+
+  /*? Let give border property individually */
+  border-width: 6px ;
+  border-style: dashed;
+  border-color: steelblue;
+  /* These three property create the shorthand border property */
+
+  /*? Let give all direction border individually */
+  border-top: 5px groove  hotpink;
+  border-right: 5px double blue;
+  border-bottom: 5px dotted springgreen;
+  border-left: 5px solid yellow;
+} 
+
+/*? border radius property */
+/* The border-radius property defines the radius of the element's corners and help to give element rounded corners */
+.border-radius {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    color: white;
+    padding: 30px; 
+    /* border-radius property */
+    /* border-radius: 50%; */
+    border-radius: 100%;
+    /* with the help of border-radius we can create circle to our html element by giving value 50% or 100% it create perfect circle other wise it become oval shape only.*/
+    /*? We can give border-radius property to individual corner also  */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius:40px;
+
+}  
+
+
+/*? Margin Property  */
+/* With the help of margin property we can give spacing between the elements it was similar to padding property but there we give internal spacing here we give spacing between two html elements. */
+
+#parent-div {
+    width: 90vw;
+    padding: 0;
+    height: 60vh;
+    border: 3px solid black;
+}
+
+.first-child {
+    width: 200px;
+    height: 100px;
+    border: 3px solid sandybrown;
+    /* margin property */
+    margin: 20px;
+    /* Above we give margin property in all 4 direction with single value */
+}
+
+.second-child {
+    width: 200px;
+    height: 150px;
+    border: 3px dashed hotpink;
+    /*? Let give margin property individually  */
+    margin-top: 20px;
+    /*! When we give margin from top than it start creating space from top of 20px */
+    margin-bottom: 40px;
+    /*! Similarly we give margin from bottom it start creating space from bottom of 40px */
+    margin-right: 60px;
+    /*! When we give margin from right so it start creating space from right of 60px */
+    margin-left: 80px;
+    /*! When we give margin from left so it start creating space from left of 80px */
+}
+
+
+
