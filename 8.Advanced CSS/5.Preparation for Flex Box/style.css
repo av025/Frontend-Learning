@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Parent Element */
+#parent-element {
+    border: 5px solid tomato;
+    height: 500px;
+    display: flex;  
+    /*! In Flex first we create flex-container to our parent element with the help of display property. */
+    flex-direction: row; /* Default direction of our flex-contianer */
+    /* flex-direction: row-reverse; */  
+    /*? Here we use row-reverse direction of our flex-container than our flex-child start from reverse */ 
+    /* flex-direction: column; */
+    /*? We give flex container direction column than our flex-item was arrange in column direction */
+    /* flex-direction: column-reverse; */
+    /*? We give flex container direction now reverse-column so our item arrange from reverse. */
+    flex-wrap:nowrap; /* default value nowrap*/
+    /*? If we have multiple Flex-items and they are all arrange in rows and they are going outside of our viewport than we have to use this "flex-wrap property" with value "wrap" so our all flex-item was wrap inside the flex-container and adjust properly */
+    flex-wrap: wrap;
+
+    /*! Now we want to give both "flex-direction" and "flex-wrap" together than we use shorthand property flex-flow */
+    flex-flow: row nowrap; 
+
+    /*? Let arrange flex-item to our main-axis we use property justiy-content */
+    /* justify-content: start;  */
+    /* With the help of justify-content we can arrange element on the main-axis here we used justify-content:start element */
+    /* justify-content: end; -- Element arrange from the end of our flex-container */
+    /* justify-content: space-evenly;  */
+    justify-content: space-around;
+    /* justify-content: space-between; */
+
+    /*? Simlarly we want to arrange the items in cross-axis than we use the "align-items" property to arrange element. */
+    /* align-items: start; --> It arrange our element from start of cross-origin */
+    /* align-items: center; --> It arrange our element to center of cross-origin */
+    /* align-items: end; -->  It arrange our element at last of cross-origin */
+    align-items: start; 
+
+
+    /*? When we have multiple rows of flex items due to wrapping, we use the align-content property to distribute space along the cross axis (perpendicular to the main axis). It works similarly to justify-content, but instead of arranging items along the main axis, it distributes space between lines on the cross axis. */
+    align-content: start; 
+    /* align-content: center; */
+    /* align-content: end; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
+}
+
+/* children styling of parent element */
+/*! This dev elements are direct childrent of our flex-container so it was called flex-child */
+#parent-element div {
+    border: 3px solid seagreen;
+    padding: 25px;
+    background-color:cornsilk;
+    /* min-width: 100px;  */
+    /* When we use flex-wrap:wrap than we have to give minimum-width always */
+    /*! Always give minimum-width upto 100px to flex-child so our individual flex-children was not shrink below the 100px that's why we give if the multiple elements are we placed in our flex-container. */
+
+    /* max-width: 300px; */
+    /* max-height: 200px; */
+}
+
+
+/*! Here we the concept from which we arrange our element the concept was "main-axis" or "cross-axis" */
+/* If the flex-direction property value was "row" than main-axis was row "X-axis" and cross-axis was column "Y-axis" similarly if the flex-direction property value was "column" than main-axis was column "Y-axis" and row become cros-axis "X-axis". */ 
+
+
+/*? flex-basis and flex-grow */
+
+/** Flex-basis */
+/* flex-basis is used to set the initial size of a flex child along the main axis. It behaves like width or height depending on the direction. If width, height, or max-width/max-height are also set, they can override the flex-basis. */
+
+#childOne {
+    flex-basis: 400px;
+    /* flex-basis: 50%; */
+} 
+
+/** Flex-grow */
+/* Flex-grow helps to grow our specific flex-child to take the empty spaces and grow according to the value we give to this property. It grows more compared to their siblings if it has a higher value.  */
+
+#childTwo {
+    /* flex-basis: 10%; */
+    flex-grow: 3;
+}
