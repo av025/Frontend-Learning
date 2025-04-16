@@ -24,4 +24,9 @@ html {
 /* Let use this css variables */
 body {
     background-color: var(--Limesicle);
+    /*! We var function in css to use our css variable values and apply styling to that  */
+    margin: 0;
+    padding: 0;
+    /* We set our padding & margin to 0 pixels and  because all of the browser was also give default margin and padding to some elements and we want to style our elements manually so initially or default we give this both 0 px. */
+    color: black;
 }
