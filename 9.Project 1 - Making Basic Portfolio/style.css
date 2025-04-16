@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+} 
+
+
+/*! If we want to reuse the same CSS value in multiple places, we can create a variable to store that value. Then we can use the variable instead of repeating the actual value every time. */ 
+
+/*? We use :root pseudo class selector which was means the root element same as html element but this :root selector has high precedance as compare so every css variables we are create under the root folder only  */
+:root {
+    --Limesicle:#F2EBBF;
+    /*! We create variable with the help of double hyphen symbol */
+    --Morning-green:#8CBEB2;
+    --Jacqueline-color:#5C4B51;
+    --Crunch:#F3B562;
+    --Dubarry:#F06060;
+    /* Above we see how we declare the variable now let understand how can we use this variables value */
+}
+
+
+/* Let use this css variables */
+body {
+    background-color: var(--Limesicle);
+}
