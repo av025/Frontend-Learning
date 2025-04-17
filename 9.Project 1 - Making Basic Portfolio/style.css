@@ -126,7 +126,6 @@ h1,h2,h3,h4,h5,h6 {
 nav {
     font-size: 100%;
     padding: 1rem;
-    margin-left: 30px;
 }
 
 nav ul {
@@ -134,9 +133,11 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-right:2rem ;
 }
 
 nav a {
@@ -147,12 +148,14 @@ nav a {
 
 nav a:hover {
     /* text-decoration: underline; */
-    color: var(--Morning-green);
+    color: var(--Jacqueline-color);
 }
 
 nav li:first-child {
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    flex-basis: 100%;
     font-size: 1.5rem;
+    margin-left: 3rem;
 }
 
 .button {
@@ -165,4 +168,14 @@ nav li:first-child {
 .button:hover {
     background-image:linear-gradient(90deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     color: white;
+}
+
+/*? Here we are using media queries which was responsible to write responsive styling because our browser will run on multiple devices and they all have different viewport so we have to write multiple css for different screen with the use of @media query  */
+@media (min-width: 900px) {
+    nav li:first-child {
+        flex-grow: 1;
+        flex-basis: auto;
+        /* ! If we want to reset the flex-basis */
+    }
+
 }
