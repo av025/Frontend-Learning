@@ -83,11 +83,19 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 4rem;
     font-weight: normal;
     /*? Here we use font-weight  property to increase or decrease the thickness and boldness of our text here we give font-weight normal. */
-}  
+}   
+
+
+#experience {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 4rem; */
+    padding: 20px;
+}
 
 
 #experience a {
-    color: var(--Dubarry);
+    color: crimson;
     text-decoration: none;
 }
 
@@ -95,13 +103,26 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
     font-size: 1.5rem;
+    border: solid rgb(182, 9, 212) 3px;
+    width: 400px;
+    background-color: var(--Morning-green);
+    border-radius: 5px;
 }
 
 #experience li  {
     /* Now we want to remove bullet points from the li than we use property "list-style-type"  with the help of it we can add multiple list style or remove list-style */
     list-style: none;
     padding: 10px;
+    color: white;
 } 
+
+.experience-heading {
+    font-size: 3rem;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
 
 #hire {
     width: 400px;
@@ -177,6 +198,16 @@ nav li:first-child {
     background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(180, 87, 199, 1) 90%, rgba(237, 221, 83, 1) 100%);
 } 
 
+.my-picture {
+    max-width: 680px;
+    max-height: 350px;
+}
+
+.my-picture img { 
+    width: 100%;
+    height: 100%;
+
+}
 
 footer {
     text-align: center;
