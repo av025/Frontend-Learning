@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+} 
+
+#progress {
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+} 
+
+#progress-bar {
+    background-color: aqua;
+    padding:5px;
+    flex-basis: 75%;
+} 
+
+.percentage {
+    display: block;
+    margin: 0 auto;
+    width: 5px;
+}
