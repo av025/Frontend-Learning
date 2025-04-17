@@ -81,4 +81,23 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 4rem;
     font-weight: normal;
     /*? Here we use font-weight  property to increase or decrease the thickness and boldness of our text here we give font-weight normal. */
+}  
+
+
+#experience a {
+    color: var(--Dubarry);
+    text-decoration: none;
 }
+
+#experience ul {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+#experience li  {
+    /* Now we want to remove bullet points from the li than we use property "list-style-type"  with the help of it we can add multiple list style or remove list-style */
+    list-style: none;
+} 
+
+
