@@ -100,6 +100,7 @@ h1,h2,h3,h4,h5,h6 {
 #experience li  {
     /* Now we want to remove bullet points from the li than we use property "list-style-type"  with the help of it we can add multiple list style or remove list-style */
     list-style: none;
+    padding: 10px;
 } 
 
 #hire {
@@ -168,6 +169,16 @@ nav li:first-child {
 .button:hover {
     background-image:linear-gradient(90deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     color: white;
+}
+
+.gradient-section {
+    height: 2px;
+    background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(180, 87, 199, 1) 90%, rgba(237, 221, 83, 1) 100%);
+} 
+
+
+footer {
+    text-align: center;
 }
 
 /*? Here we are using media queries which was responsible to write responsive styling because our browser will run on multiple devices and they all have different viewport so we have to write multiple css for different screen with the use of @media query  */
