@@ -119,4 +119,36 @@ h1,h2,h3,h4,h5,h6 {
 
 .section-Jacqueline-color {
     background-color: var(--Jacqueline-color);
+} 
+
+nav {
+    font-size: 100%;
+    padding: 1rem;
 }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--Dubarry);
+    font-size: 1.4rem;
+}  
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--Morning-green);
+}
+
+nav li:first-child {
+    flex-grow: 1;
+    font-size: 1.5rem;
+}
+
