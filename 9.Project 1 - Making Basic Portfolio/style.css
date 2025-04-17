@@ -100,4 +100,18 @@ h1,h2,h3,h4,h5,h6 {
     list-style: none;
 } 
 
+#hire {
+    width: 400px;
+    text-align: center;
+    /* With the help of this text-align property we can align our content in horizontal direction of our html element. */
+    margin:  0 auto;
+    /* ! When we give margin by two value than first value belongs to top & bottom margin and the second value auto was left & right margin. */
+    padding: 3rem 0;
+    background-color: var(--Jacqueline-color);
+    color: aliceblue;
+}
 
+#hire p {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
