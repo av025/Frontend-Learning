@@ -44,13 +44,41 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
-    border: 2px solid red;
-    margin: 10px;
+    /* border: 2px solid red;
+    margin: 10px; */
 } 
 
-#about-me {
+/* #about-me {
     border: 2px solid red;
     margin: 5px;
+}  */
+
+/*? Now in our intro section the h2 element i give  margin 10px on bottom 7 similarly i give margin 5px on top so vertically whenver we apply margin than that margin was bigger that was applied and les or minimum margin was not applied that concept was called as "margin collapse" in which bigger margin apply as compare to other margin. */  
+
+#intro {
+    margin-bottom: 8rem;
+}
+
+#intro p {
+    font-size: 1.5rem;
+    /* When we give font-size equal to 1rem than this section font-size relative to root element or html element    */
+    /* color: var(--Jacqueline-color); */
+    line-height: 6px;
+    /* With the help of line-height property we can define the line height of our elements or box.  */
+    /*! We don't  give the line-height in absolute font-size css instead give in relative unit or only give 1.5 or 2 for our line-height so it scale according to that only in all our devices if we give absolute or fixed value the line-height will be overlap in different devices. */
+    line-height: 1.5;
 } 
 
-/*? Now in our intro section the h2 element i give  margin 10px on bottom 7 similarly i give margin 5px on top so vertically whenver we apply margin than that margin was bigger that was applied and les or minimum margin was not applied that concept was called as "margin collapse" in which bigger margin apply as compare to other margin. */
+/* Applying styling on my name span tag*/
+.name span {
+    display: block;
+    /*! Now here we use display property in css and give block value means we convert our span tag which was natuarlly was inline block but with the help of display property we convert this inline element into block level element. */
+    font-size: 4rem;  /*? 4 rem = 4 * 16px = 64px */
+    color: var(--Dubarry);
+} 
+
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    /*? Here we use font-weight  property to increase or decrease the thickness and boldness of our text here we give font-weight normal. */
+}
