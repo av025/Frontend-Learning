@@ -56,7 +56,9 @@ h1,h2,h3,h4,h5,h6 {
 /*? Now in our intro section the h2 element i give  margin 10px on bottom 7 similarly i give margin 5px on top so vertically whenver we apply margin than that margin was bigger that was applied and les or minimum margin was not applied that concept was called as "margin collapse" in which bigger margin apply as compare to other margin. */  
 
 #intro {
-    margin-bottom: 8rem;
+    margin: 4rem 1rem 5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #intro p {
@@ -124,6 +126,7 @@ h1,h2,h3,h4,h5,h6 {
 nav {
     font-size: 100%;
     padding: 1rem;
+    margin-left: 30px;
 }
 
 nav ul {
@@ -143,7 +146,7 @@ nav a {
 }  
 
 nav a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: var(--Morning-green);
 }
 
@@ -152,3 +155,14 @@ nav li:first-child {
     font-size: 1.5rem;
 }
 
+.button {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+} 
+
+.button:hover {
+    background-image:linear-gradient(90deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    color: white;
+}
