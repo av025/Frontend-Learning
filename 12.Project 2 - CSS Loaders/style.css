@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+} 
+
+
+.loaderOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    /* background-color: grey; */
+} 
+
+.loaderOne > div {
+    border: 6px solid  red;
+    border-top: 6px solid #d2c0c0;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    /* animation-name: loaderOneSpinner;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out; */
+    animation: loaderOneSpinner 2s linear infinite;
+    /*? animation-direction was used to give direction of our animation too !!!!  */
+    animation-direction: reverse;
+    /* It create our direction reverse of our animation */
+    animation-direction: alternate-reverse;
+    /* It create our direction alternate-reverse of our animation */
+    animation-direction: alternate;
+    /* It create our direction alternate means our animation direction was alternate */
+} 
+
+@keyframes loaderOneSpinner {
+    from {
+        transform: rotate(0);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
