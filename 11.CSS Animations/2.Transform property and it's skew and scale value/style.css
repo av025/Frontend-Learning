@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+
+.parent {
+    width: 100%;
+    height: 50vh;
+    padding: 20px;
+    border: 2px solid teal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+.scale-property-static {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    border-radius: 50px;
+
+} 
+
+#scale-property-moving {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    /*! Now we give scale value to our transform property to scale this value. */
+    transform: scale(2,2);
+    /* We use here scale value which scale our element 2 times of its original size here we use scale common property so it scale in x-axis as well as y-axis. */
+    transform: scaleX(4);
+    /* We use only scaleX value so it scale 4 times of its width  */
+    transform: scaleY(2);
+    /* We use only scaleY value so it scale only 2 times of its height */
+    /*! We have to understand it will scale up in both side left & right in X-axis direction & scale up top & bottom in Y-axis direction. */
+    /* Now scale-down our html element */
+    transform: scale(0.6);
+    /*? When we give value between 0.1 to 0.9  than we scale-down our element. */
+} 
+
+/*? Here we use hover pesudo class hover for mouse hover effect */
+.first-child:hover {
+    transform: scale(3); 
+    /* Here we scale up our element */
+}
+
+.last-child:hover {
+    transform: scale(0.5);
+    /* Here we scale down our element */
+} 
+
+.skew-parent {
+    justify-content: center;
+}
+
+.skew-property {
+    width: 200px;
+    height: 200px;
+    border: 5px solid slateblue;
+    background-color: coral;
+    align-self: center;
+    border-radius:100px ;
+    transform: skew(30deg, 20deg);
+    /* We give skew property so it streches our element from x-axis it was 30 deg and from y-axis it was 20deg above we give short-hand skew property  */
+    transform: skewX(60deg);
+    transform: skewY(20deg);
+    /* We can strech our element in individual direction also in X-direction and Y-direction */
+} 
+
+
