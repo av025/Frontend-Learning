@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+
+#parent {
+    width: 100%;
+    height: 60vh;
+    border: 3px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.child {
+    width: 100px;
+    height: 100px;
+    /* background-color: crimson; */
+    border: 5px solid peru;
+    border-top: none;
+    border-radius: 50px;
+  /*! First we have to define the property in which we have to apply transition  */
+    /* transition-property: transform, margin-left, background-color; */
+    /*? In above example we give the transition-property value individualy one by one. */
+    /* transition-property: all; */
+    /*? Now here we give value all to apply transition to all of our this element css properties */
+} 
+
+
+.child:hover {
+    /* transform: translate(200px, 100px); */
+    /* transform: scale(0.5); */
+    /* margin-left: 100px; */
+    transform: rotate(6turn);
+    background-color: peru;
+    /* transition-delay: 2s; */
+    /*? this transition-delay will help to delay our element to start transition */
+    /* transition-duration: 4s; */
+    /*? this transition-duration will help to define the duration our state what time to take element to complete our transition.  */
+    /* transition-timing-function: linear; */
+    /*? With the help of transition-timing-function we define the timing how the timing function should behave. */
+    /* transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out; */ 
+
+    /*? Let use transition short hand property to give all this individual properties together. */
+    transition: all 5s ease-in-out 2s;
+    /*? Below we give sequence of our 4 properties we apply in short-hand transition */
+    /** transition-property : all */
+    /** transition-duration : 5s */
+    /** transition-timing-function : ease-in-out */
+    /** transition-delay : 2s */
+
+
+} 
+
+/*? transition property in CSS allows us to create smooth animations between the initial and final states of an element when a property changes — for example, during hover or focus. It doesn't just make the change happen — it makes the change happen gradually over a set duration. */
+
+/*! The main 4 Properties of Transition was : */
+/** 1st. transition-property : To select the particular css property or all css property  */
+/** 2nd. transition-delay : This property helps for delay in our transition */
+/** 3rd. Transition-duration : This property define the duration of our transition from one state to second state. */
+/** 4th. Transition-timing-function : Now it function help to define how our transition should be like linear all through and all other values related to this transition-timing-function. */
