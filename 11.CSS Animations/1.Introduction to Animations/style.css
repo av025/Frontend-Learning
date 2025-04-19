@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+} 
+
+.row {
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+}
+
+.static {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50px;
+} 
+
+
+.moving {
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    /* border-radius: 25px; */
+    /* transform: translate(20px , 20px); */
+    /*! We can move our html element in X-direction & Y-Direction with the help of transition value of our transform property. we translate 20px in X-direction & 20px in Y direction. */
+    /* We can move our element in individual direction also.... */
+    /*? In X-direction */
+    /* transform: translateX(200px); */
+    /*? When we give translateX value to transform than it moves our element in X direction and we give 200px so it move 200px in x-direction. */
+    /* transform: translateY(200px); */
+    /*? When we give translateY value to transform than it moves our element in Y direction and we give 200px so it move 200px in y-direction. */ 
+
+    /*! Let see the rotate value of transform property */
+    transform: rotate(45deg);
+    transform: rotate(90deg);
+    transform: rotate(180deg);
+    transform: rotate(270deg);
+    transform: rotate(0deg);
+    /* With the help of rotate value of transform property we can rotate our element in clockwise or anticlockwise direction. */ 
+
+    /*! Here we have to note that when we rotate our html element our axis X and Y Axis was also rotate with that let see example of it....  */
+    /* Let's club or mix translate and rotate value */
+    transform: translateX(200px) rotate(45deg);
+    /* Here first the element was translate in X-direction which was 200px and than rotate 45deg so that's why it become diamond shape. */
+    transform: rotate(45deg) translateX(200px);
+    /*! So here when we used first rotate value in 45deg so it's X-axis and Y-axis also rotate 45-deg than second property we used which was translate so it moves 200px in X-axis which was in 45deg tilted.   */
+}
