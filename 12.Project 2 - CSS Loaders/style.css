@@ -6,6 +6,7 @@ html {
     box-sizing: inherit;
 } 
 
+/*  loader one */
 
 .loaderOne {
     display: flex;
@@ -40,6 +41,39 @@ html {
         transform: rotate(0);
     }
     
+    to {
+        transform: rotate(360deg);
+    }
+} 
+
+/* ---------------------- X ------------------------------------------ */ 
+
+.loaderTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin-top: 30px;
+
+} 
+
+
+.loaderTwo > div {
+    border: 5px solid violet;
+    border-top: 5px solid #cdc3c3;
+    border-bottom: 5px solid #cdc3c3;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    animation: loaderTwoSpinner 2s linear infinite;
+}  
+
+
+@keyframes loaderTwoSpinner {
+    from {
+        transform: rotate(0);
+    } 
+
     to {
         transform: rotate(360deg);
     }
