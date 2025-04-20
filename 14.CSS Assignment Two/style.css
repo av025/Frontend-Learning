@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+
+:root {
+    --font-family:sans-serif;
+    --font-size:1.4rem;
+    --action-section-color:#536471;
+
+}  
+
+body{
+    margin: 20px;
+    background-color: #f9efef;
+}
+
+#tweeter-tweet-ui {
+    width: 50%;
+    height: 20vh;
+    background-color: #fff;
+    border: 1px solid #cfd9de;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    justify-content:start;
+
+    gap: 12px;
+}
+
+#thumbnail-section > img {
+    width: 60px;
+    border-radius: 30px;
+} 
+
+#user-post {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    
+}  
+
+#user-name {
+    display: flex;
+    font-size: 1rem;
+    gap:4px ;
+    color: #71767b;
+}
+
+#name {
+    font-weight: bold;
+    color: #000;
+}
+
+.message {
+    margin: 2px;
+    font-size: 1.15rem;
+} 
+
+#action-row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 425px;
+  margin-top: 12px;
+  font-size: 1rem;
+  color: var(--action-section-color);
+} 
+
+#action-row div:first-child i {
+    margin-right: 12px;
+
+} 
+
+#action-row div:nth-child(2) i {
+    margin-right: 12px;
+
+} 
+
+#action-row div:nth-child(3) i {
+    margin-right: 12px;
+
+}
