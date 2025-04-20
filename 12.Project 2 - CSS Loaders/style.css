@@ -130,3 +130,106 @@ html {
     height: 100px;
   }
 }
+
+/*------------------------- X ------------------------------------------ */
+
+/* loader Four */ 
+
+.loaderFour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  margin-top: 60px;
+  gap: 20px;
+} 
+
+.loaderFour > div {
+  width: 1rem;
+  height: 1rem;
+  border: 5px solid grey;
+  border-radius: 2rem ;
+  animation: riffleEffectLoader 2s linear infinite;
+
+} 
+
+
+@keyframes riffleEffectLoader {
+  0% {
+    /* transform: scale(1,1); */
+    width: 2rem;
+    height: 2rem;
+    border-color: grey;
+    opacity: 1;
+  }  
+  
+  4.5% {
+    /* transform: scale(1,1); */
+    width: 2rem;
+    height: 2rem;
+    border-color: grey;
+    opacity: 0;
+  } 
+
+  5% {
+    /* transform: scale(1,1); */
+    width: 2rem;
+    height: 2rem;
+    border-color: grey;
+    opacity: 1;
+  } 
+  
+ 35% {
+  opacity: 0;
+ }
+
+  50% {
+    /* transform: scale(2,2); */
+    width: 3rem;
+    height: 3rem;
+    border-color: #f7f6f5;
+    opacity: 1;
+  } 
+
+  53% {
+    width: 3rem;
+    height: 3rem;
+    border-color: #f7f6f5;
+    opacity: 1;
+  } 
+
+  54% {
+    opacity: 0;
+  }
+
+  75% {
+    /* transform: scale(2,2); */
+    width: 3.8rem;
+    height: 3.8rem;
+    border-color: #fcfbfa;
+    opacity: 1;
+  } 
+
+  79% {
+    width: 3.8rem;
+    height: 3.8rem;
+    border-color: #fcfbfa;
+    opacity: 1;
+  }
+
+  80% {
+    width: 3.8rem;
+    height: 3.8rem;
+    border-color: #fcfbfa;
+    opacity: 0;
+  }
+  
+  100% {
+    /* transform: scale(1,1); */
+    width: 4rem;
+    height: 4rem;
+    border-color: #faf5f5;
+    opacity: 1;
+  }
+
+}
