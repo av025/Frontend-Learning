@@ -12,6 +12,25 @@
 }
 
 .product-image {
-    max-width: 150px;
-    max-height: 250px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.product-image-container {
+    display: flex;
+    padding: 1rem;
+    height: 250px;
+    
+} 
+
+
+@media (max-width:570px) {
+    .product-image-container {
+        display: flex;
+        padding: 1rem;
+        height: 160px;
+        
+    } 
+
 }
