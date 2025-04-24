@@ -1,0 +1,95 @@
+html {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+} 
+
+h1 {
+    color: crimson;
+} 
+
+.grid-wrapper {
+    background-color: beige;
+    border: 2px solid red;
+    display: grid;
+    /*! We can activate our grid property with the help of display only same as flex property */
+    /* grid-template-columns: 5rem 5rem 5rem; */
+    /*? Now we have to use grid-template-columns or grid-template-rows property to define the size of our square or html element or box or rectangle. Here we define three columns with same size 5rem each. */
+    /*! In abovr grid-template-columns property we explicitly or we say manually give the columns than implicitly  rows also create in the case of template-columns */
+    /* grid-template-columns: repeat(3,5rem); */
+    /*? Now we use grid-template-columns property with repeat function so we don't have to give every columns size manually, in repeat( ) function first we give total-columns = 4 and than size of box 5rem  */
+
+    /*? We can give unit of grid in fr also means fraction which take grid size in fraction according to its parent element. */
+    /* grid-template-columns: repeat(3,1fr);  */
+    /* in above we create 3 columns with individual size of 1fr   */
+
+    /*! We can give individualy also to any specific css grid also  */
+    /* grid-template-columns: 1fr 1fr 1fr; */ 
+     grid-template-columns: repeat(4, 1fr);
+     
+    /*? grid rows */
+   /* grid-template-rows: 5rem 5rem 5rem; */
+    /** In the case of only explicitly Rows was create but not columns implicitly  */ 
+
+    
+    /* let give gap individualy  */
+    /* grid-column-gap: 2rem; */
+    /*? With the help of grid-column-gap property we can give column gap */
+    /* grid-row-gap: 1rem; */
+    /*? With the help of grid-row-gap property we can give row gap  */
+
+    /* grid-gap: 2rem; */
+    /*? This grid-gap property will gave gap vertically  */ 
+    
+    /*! this all are deprecated property let use new properties */
+    gap: 3rem;
+    /* This gap property same as grid-gap property it create gap of 3rem in rows and columnsw each */
+    row-gap: 2rem;
+    /* This row-gap  work same as grid-row-gap property to give gap between rows */
+    column-gap: 1.5rem;
+    /* This column-gap work same as grid-column-gap property to give gap between columns */
+} 
+
+.grid-wrapper > div {
+    padding: 3rem;
+    background-color: brown;
+    border: 2px solid white;
+}
+
+.child-seven {
+    grid-column: span 3;
+    /*! This grid-column property was given to individual grid-child and with the help of this we can grow our element in column. */
+} 
+
+.child-six {
+    /* grid-row: span 2; */
+    /*! This grid-row property was given to individual grid-child and with the help of this we can grow our element in row. */ 
+    grid-column: span 2;
+}
+
+.child-four {
+    grid-row: span 3;
+}
+
+.child-eight {
+    grid-column: span 3;
+} 
+
+/* Let see the property  column start and column end also  */
+.child-one {
+    grid-column-start: 1;
+    /*? With the help of grid-column-start we can start our grid child from 2nd column */
+    grid-column-end: 5;
+    /*? With the help of grid-column-end we can end our element at any column like above end at 5th column */ 
+
+    /** We can use the grid-column property also */
+    grid-column: 1/5; 
+    /* With the help of divide operator "/"  */
+} 
+
+.child-five {
+    grid-row: span 4;
+}
