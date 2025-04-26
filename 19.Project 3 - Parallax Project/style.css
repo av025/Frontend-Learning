@@ -34,7 +34,7 @@ body {
     background-image: url("./src/pexels-photo-31663212.webp");
     min-width: 100%;
     height: 600px;
-    opacity: 0.5;
+    opacity: 0.8;
 
 }
 
@@ -88,6 +88,16 @@ section p {
     top: 50%;
     width: 100%;
     text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 5px black;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+} 
+
+.first-image div > span, .second-image div > span, .third-image div > span {
+    background-color: #111111e0;
+    padding: 20px;
 }
 
 
