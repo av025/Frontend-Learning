@@ -38,12 +38,6 @@ body {
 
 }
 
-.fourth-image{
-
-
-} 
-
-
 .first-image,.second-image,.third-image,.fourth-image {
     background-position: center;
     /*! With the help of background-position we define the position of our element. We can give position in both vertically and horizontally. */
