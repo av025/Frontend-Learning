@@ -41,7 +41,8 @@ body {
 .fourth-image{
 
 
-}
+} 
+
 
 .first-image,.second-image,.third-image,.fourth-image {
     background-position: center;
@@ -71,4 +72,46 @@ section p {
 .section-light {
     background-color: #f4f4f4;
     color: #111111ea;
+}  
+
+
+.image {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */ 
+    position: relative;
+} 
+
+
+.image div {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
 }
+
+
+/*! Position Property of CSS */
+/* The Position property was most important property with the help of position property we decide how our html element was position in our webpage  */ 
+
+/*? There was 5 types of position property we can see in our css */
+/** 1st. Static property */
+/* This was the default property of css which helps to set how an element is positioned in a document. The top, right, bottom, left, and z-index have no effect on this property.   */ 
+
+/** 2nd. Relative property */
+/* In this Relative property of position here also elements are in its normal flow of documents but here off-set properties top, bottom, left and right was unlocked with the help of this property we can give position or place our element in our layout. In Relative property element was relative to its own original position. */ 
+
+/** 3rd. Absolute property */
+/* In position: absolute, the element is removed from the normal document flow, and no space is reserved for it — it behaves like it was never part of the flow. We can move or place the element using the offset properties top, bottom, left, and right. The absolute element is positioned relative to its nearest ancestor that has a position of relative, absolute, fixed, or sticky.
+Otherwise, if there is no such non-static parent, it will be positioned relative to the <html> (root) element.  */ 
+
+/** 4th. Fixed Property */
+/* In the fixed position property, the element is removed from the normal document flow, and no space is reserved for it — it behaves as if it was never part of the flow. It is fixed relative to the viewport and does not move when the page is scrolled. We can move or place the element using the offset properties top, bottom, left, and right.
+ */ 
+
+
+ /** 5th. Sticky Property */
+ /*  In the sticky position property, the element behaves like relative at first — meaning it stays in the normal document flow and space is reserved for it.
+But when you scroll and the element reaches a certain point (based on top, bottom, left, or right offset values), it becomes "stuck" and behaves like fixed, sticking to that position on the screen while you keep scrolling.
+
+After scrolling further (depending on the parent boundaries), it may stop sticking if the parent container ends. */
