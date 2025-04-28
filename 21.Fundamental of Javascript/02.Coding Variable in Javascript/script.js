@@ -14,7 +14,7 @@ var playerName = "Aayush Vyas";
 //* In javascript semi-colon are optional what to use semi-colon was in javascript was standard practice for creating document of our code and for readable puropse also. 
 
 //! 2nd. With the help of "let" keyword 
-//* Syntax : var <variable name> = <value of variable> 
+//* Syntax : let <variable name> = <value of variable> 
 // Example of let keyword variable :- 
 let age = 26;  // variable three 
 // let anotherAge = 30;   variable Four 
@@ -39,3 +39,8 @@ const totalPeople = 10; // variable six
 // Mainly in programming the two important convention was used first was camelCase convention and second was snakecase convention 
 //! In javascript we mainly use camel-case convention 
 
+//? What was the declaration of variable 
+//* When we just create or declare our variable without assign the value than it was called "Declaration of Variable"
+// let see example of declaration of variable 
+let myVariable;
+//? This above was called the declaration of variable. 
