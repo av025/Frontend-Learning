@@ -191,7 +191,10 @@ header i:hover {
 
 main {
     width: 100%;
-}
+} 
+
+/* Brefing Section  */
+
 .user-breifing-section {
     width: 80%;
     padding: 20px;
@@ -257,6 +260,99 @@ main {
 
 .brefing-section-two a:hover{
     text-decoration: underline;
+} 
+
+
+
+/* Top Stories */
+.top-stories-local-news {
+    position: relative;
+    left: 5%;
+    top: -15px;
+    margin-top: 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-gap: 1rem;
+} 
+
+.top-stories {
+    padding: 0;
+  grid-column: 1 / span 10;
+  background-color: var(--primary-background-color);
+  border-radius: 15px;
+  grid-row: 1/ span 6;
 }
 
+.local-news {
+    grid-column: 11 / span 16;
+    background-color: var(--primary-background-color);
+    border-radius: 15px;
+    grid-row: 1/ span 4;
+}
 
+.header-section-top-stories {
+ padding: 0 10px;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #8AB4D5;
+
+}
+
+.sepearator-top-stories {
+    width: 95%;
+    border-radius: 10px;
+    border: 1px solid #bdc1c640;
+    margin: 0 auto;
+} 
+
+.first-top-stories-section {
+    width: 44%;
+    padding: 15px;
+} 
+
+.first-top-stories-section img {
+    width: 280px;
+    height: 200px;
+    border-radius: 9px;
+} 
+
+.story-header {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+} 
+
+.story-header span {
+    flex-grow: 1;
+}
+
+.story-header span:hover , .fa-ellipsis-vertical:hover {
+    color: var(--primary-text-color);
+    cursor: pointer;
+} 
+
+.story a {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+
+} 
+
+.story a:hover {
+    text-decoration: underline;
+}
+
+.story-footer {
+    font-size: 0.8rem;
+    color: var(--secondary-text-color);
+}
