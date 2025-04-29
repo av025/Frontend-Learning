@@ -74,4 +74,6 @@ console.log(numberThree); //? Output was 20
 //* 6th. Modulus assignment operator "%="
 numberThree %= 2; 
 //! numberThree = numberThree % 2 => 20 % 2 = 0 
-console.log(numberThree);
+console.log(numberThree); 
+
+//! This assignment operator are all uniary operator 
