@@ -15,7 +15,8 @@ console.log("My name is \t Aayush Vyas")
 
 //* Another example of escape sequence : 
 let age = 25; 
-let name = "Aayush Vyas";
+let myName = "Aayush Vyas";
 
-console.log(name, "\n", age)
-//! We use newline character inside the string 
+console.log(myName, "\n", age)
+//! We use newline character inside the string  
+
