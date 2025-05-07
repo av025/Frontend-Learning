@@ -28,7 +28,7 @@ function isEvenOrOdd() {
     if(number % 2 === 0) {
         return true;  //* In conditional we return this if even number 
     }else {
-        return false;  //* In conditional we return this if odd number 
+        return false;  //* In conditional we return this if odd number
     }
 } 
 
