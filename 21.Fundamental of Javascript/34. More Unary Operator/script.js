@@ -38,3 +38,4 @@ console.log("operand value :", -"56", ", operand datatype :", typeof -"56");
 
 //! typeof operator 
 // typeof operator was also unary operator which helps to findout datatype of our operand. 
+console.log(typeof 256);  //* Output was number 
