@@ -78,4 +78,25 @@ if(day === 1) {
     console.log("Saturday")
 }else {
     console.log("Sunday")
-}
+} 
+
+
+
+//? More example of switch case 
+
+switch(5 - 4) {
+    case 1 : 
+    console.log("Output was 1"); 
+    break; 
+
+    case 2: 
+    console.log("Output was 2");
+    break; 
+
+    case 3:
+        console.log("Output was 3");
+        break; 
+
+    default : 
+    console.log("Default Case No Output"); 
+} 
