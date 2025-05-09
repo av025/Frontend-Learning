@@ -23,3 +23,59 @@
 //!   default:   
 //!     logic or default statement 
 //! }
+
+
+
+//? Let see example of switch case 
+let day = 1;  //* intialize the variable day   
+
+switch(day) {
+    case 1 : 
+    console.log("Monday"); 
+    break;  
+    //! We use Break statement for stop the execution of switch statement and comes out of there block 
+
+    case 2: 
+    console.log("Tuesday");  
+    break; 
+
+    case 3 : 
+    console.log("Wednesday"); 
+    break; 
+
+    case 4 : 
+    console.log("Thursday"); 
+    break; 
+
+    case 5 : 
+    console.log("Friday"); 
+    break; 
+
+    case 6 : 
+    console.log("Saturday"); 
+    break; 
+
+    default : 
+    console.log("Sunday"); 
+} 
+
+
+
+
+//! This Switch Case Statement was also the alternate condtional statement we can use if-else statement also to perform this task 
+
+if(day === 1) {
+    console.log("Monday"); 
+} else if(day === 2) {
+    console.log("Tuesday"); 
+} else if(day === 3) {
+    console.log("Wednesday"); 
+}else if(day === 4) {
+    console.log("Thursday"); 
+}else if(day === 5) {
+    console.log("Friday"); 
+}else if(day === 6) {
+    console.log("Saturday")
+}else {
+    console.log("Sunday")
+}
