@@ -2,7 +2,7 @@
 //* This ToBoolean was also the abstraction operation which also perform the coercion and convert other type into boolean type
 //* This was also abstract operation which done by language itself and we developers don't acces this method. 
 
-//? We can perform ToBoolean abstract operation with the help of logical not "!" operator  
+//? We can perform ToBoolean abstract operation with the help of logical operator , comparison operator , conditional statement.   
 
 //! Syntax of ToBoolean was : ToBoolean(argument)
 
