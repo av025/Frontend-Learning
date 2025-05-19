@@ -1,4 +1,4 @@
-//! Explore negative zero with math sign and isObject 
+//! Explore negative zero with Math.sign() and Object.is() 
 
 const negativeZero = -0; 
 console.log(negativeZero === 0); // output : true which was algorithm correct but can't specify which was -0 value 
