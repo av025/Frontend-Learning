@@ -41,23 +41,24 @@ console.log(person);
 //? 3rd. Block Scope 
 //* When we implement the block scope than all the variables,  
 
+//! Can we access the variable to print just before intialization 
+console.log(per);  //* Output undefined with var keyword variable 
+//? Yes we can access but with var keyword variable and it give output undefined or if we access the variable with let keyword variable define it give error that per was not defined. 
 
 // let see some example of scopes 
 // let per = "Aayush"; //? This variable was assign globaly to js code 
+
 //* intialize the per variable with var keyword 
 var per = "Aayush";
 //? Below fun function we implement and create function scope in it..... 
-function fun() {
-    //! When we create variable per with let keyword than it give error to us that per was not initalize so we can't use that. 
+function foo() { 
     console.log(per); 
-    //* If we use var keyword variable it was not giving us intialization error 
 } 
 
-fun();
+foo();
 
 console.log(per); //* Print per variable  
 
-
-
+//? let and var keyword variables also play crucial role to understand scopes in js
 
 
