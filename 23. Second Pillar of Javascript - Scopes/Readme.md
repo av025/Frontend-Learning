@@ -1,0 +1,1 @@
+# Second Pillar of Javascript - Scopes 
