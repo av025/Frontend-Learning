@@ -4,22 +4,13 @@
 
 function mainCallbackFn(callback) {
   console.log("Main Callback function Executed !!!! ");
-  return callback;
+   callback();
 }
 
-function firstInnerCB(callback) {
-  console.log("First Inner Callback was executed !!!");
-  return callback;
+function innerCallback() {
+   console.log("Calling inner callback function !!!")
 }
 
-function secondInnerCB(callback) {
-  console.log("Second Inner Callback was executed !!!");
-  return callback;
-}
+mainCallbackFn(innerCallback);
 
-function thirdInnerCB() {
-  console.log("Third Inner Callback was executed !!!");
-}
-
-mainCallbackFn(firstInnerCB(secondInnerCB(thirdInnerCB())));
 //! Here we see that it create the CallBack hell  mulitple layer of function call to each-other by mainCallbackFn
