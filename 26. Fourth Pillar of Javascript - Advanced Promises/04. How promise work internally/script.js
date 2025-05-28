@@ -76,7 +76,15 @@ response.then(function success(value) {
 
 
 //! This was the entry point to understand how promise work internally 
-//? Now on the base of Fullfilment of promise or rejection of promise what two things we can do we aatach the function from onFullFilment and onRejection and we know that we can attach with the help of .then handler we can attach fullfilment handler and rejection handler respectively. 
+//? Now on the base of Fullfilment of promise or rejection of promise what two things we can do we aatach the function from onFullFilment and onRejection and we know that we can attach with the help of .then handler we can attach fullfilment handler and rejection handler respectively.  
+
+//?  Promis Object handle all this 4 things 
+//   __________________________________ 
+//  | 1.  value                        |
+//  | 2.  Promise  State               |
+//  | 3. onFullfilement : [f1,g]       | 
+//  | 4. onRejection    : [g1,k]       |
+//  |__________________________________|
 
 //*  In the Memory we create the Call-stack 
 
