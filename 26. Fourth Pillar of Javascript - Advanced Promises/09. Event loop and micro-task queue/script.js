@@ -55,7 +55,7 @@ console.log("Ending.......");
  */
 
 
-//! Here the Macro-task queue was executed because the setTimeout function of Macro-task have 0 milli-seconds and setTimeout() of Micro-task have the 1sec so that's why it was executed later because it was not resolve or rejected because it was wrap inside the setTimeout function so event loop have the first priority on the micro-task only but that promises handler was not registered so it was event-loop execute the macro-task function fist so continously check both the micro-task and macro-task queue. 
+//! Here the Macro-task queue was executed because the setTimeout function of Macro-task have 0 milli-seconds and setTimeout() of Micro-task have the 1sec so that's why it was executed later because it was not resolve or rejected because it was wrap inside the setTimeout function so event loop have the first priority on the micro-task only but that promises handler was not registered so it was event-loop execute the macro-task function first so continously check both the micro-task and macro-task queue. 
 
 
 
