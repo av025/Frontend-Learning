@@ -41,6 +41,13 @@ console.log("Ending");
  *  after that .then() handler to consume promise register the success handler in the micro-task queue but it execute after the timer function setTimeout because promise value was undefined that time that's why 
  */ 
 
-//! So the Flow of the execution was --------> fetchData() "global call-stack"  ---------> setTimeout function "Macro-task queue" --------> processingDownload() ---------> .the() handler success "Micro task queue"
+
+//! Flow of Code 
+//! fetchData() → global call stack
+//! → setTimeout() registered → goes to Timer System → Macrotask queue (waits 7 sec)
+//! → After 7 sec, processDownloading() is pushed to call stack from Macrotask queue
+//! → Inside processDownloading(), resolve(data) is called → Promise is fulfilled
+//! → .then(success) callback is scheduled in the Microtask queue
+//! → Microtask (then) is executed after the current macrotask finishes
 
 
