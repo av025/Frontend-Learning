@@ -7,7 +7,7 @@
 
 function download(url, callback) {
   console.log("Downloading data from the url ", url);
-  setTimeout(function processDownloading() {
+  setTimeout(function downloading() {
     console.log("Download Completed after 5 seconds ");
     let downloadContent = "Movie";
     callback(downloadContent);
@@ -25,7 +25,7 @@ function writeFile(data, callback) {
 
 function uploadFile(url, filename, callback) {
   console.log(`Start uploading ${filename} on ${url}`);
-  setTimeout(function () {
+  setTimeout(function uploading() {
     console.log("upload completed !!!");
     const response = "success";
     callback(response);
