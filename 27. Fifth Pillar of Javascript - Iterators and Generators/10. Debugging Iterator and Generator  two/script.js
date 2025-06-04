@@ -1,38 +1,40 @@
 //! Debugging Iterator and Generator Two
 
+//* Example of Generator Function 
 function* fetchNextElement() {
-    const x = 10; 
-    yield 11; 
+    const x = 10;
+
+    yield 11;  
+    //* First yield → Pauses execution and returns {value: 11, done: false}
+
     console.log("Entering after a yield");
-    const y = x + (yield 30);
-    console.log("Value of y is ", y); 
-}; 
 
+    const y = x + (yield 30);  
+    //* Second yield → Execution pauses again and returns {value: 30, done: false}
+    //* When resumed with .next(value), that value gets assigned to second yield expression
 
-const iterator = fetchNextElement(); 
-console.log("first", iterator.next());
-console.log("Second", iterator.next()); 
-console.log("Third", iterator.next(8));  
+    console.log("Value of y is", y);  
+    //* After getting value from .next(), y = 10 + value passed → prints result
+};
 
+const iterator = fetchNextElement();  
+//* Generator function returns an iterator object
 
-//* Let understand how this code execute in call stack 
+console.log("First", iterator.next());
+//* First call to .next():
+//  Starts execution, hits first yield (yield 11), pauses
+//? Output: { value: 11, done: false }
 
-//? | iterator.next(8) Now it execute again from the previous yield value and we replace the yield|
-//? | value from 30 to 7 after the yield second it start resume exceuted                          |
-//? |  then :                                                                                     |
-//? |  y = 10 + 8    "30 replace from 8" and from here only it start executing again              |
-//? | Value of y is 18                                                                            |                                                         
-//? | third {value:undefined , done:false}                                                        |
-//? |_____________________________________________________________________________________________|
-//? | iterator.next();    "Here we execute of function fetchNextElement() upto yield 11 then stop"|
-//? |  This fetchNextElement() stop and remove from the call stack because whenever the yield 30  |
-//? |  statement comes it pause the execution.                                                    |
-//? |_____________________________________________________________________________________________|
-//? | iterator.next();    "Here we execute of function fetchNextElement() upto yield 11 then stop"|
-//? |  This fetchNextElement() stop and remove from the call stack because whenever the yield     |
-//? |  statement comes it pause the execution.                                                    |
-//? |                                                                                             |
-//? |_____________________________________________________________________________________________|
-//? |                                                                                             |
-//? |  fetchNextElement() it returns iterator object { }                                          |
-//? |_____________________________________________________________________________________________|
+console.log("Second", iterator.next());
+//* Second call to .next():
+//  Resumes after first yield → runs console.log("Entering after a yield")
+//  Then hits second yield (yield 30), pauses again
+//? Output: { value: 30, done: false }
+
+console.log("Third", iterator.next(8));
+//* Third call to .next(8):
+//  8 is injected into the paused yield 30 expression → so y = 10 + 8 = 18
+//  Executes console.log("Value of y is", 18)
+//  Generator completes → returns { value: undefined, done: true }
+//? Output: Value of y is 18
+//?         Third { value: undefined, done: true }
