@@ -56,7 +56,7 @@ console.log(iterateOnElement.next());
 //? { value: undefined, done: true }
 
 //! What was yield keyword doinghere in this generator function ? 
-//* This "yield" keyword we say work as to temperory return the value or start the exceution of generator function which was implement in the generator function and this generator function implement was stored in the Iterator object which it was return so here the "yield" keyword help to continue as the execution of generator function without this our generator function return iterator object was pause.  
+//* This "yield" keyword we say work as to temperory return the value and pause the exceution of generator function which was implement in the generator function and this generator function implement was stored in the Iterator object which it was return so here the "yield" keyword help to continue as the execution of generator function without this our generator function return iterator object was pause.  
 
 //? Revise the function of yield again 
 //* The "yield" keyword in a generator function acts like a temporary return — it pauses the execution and returns a value.
