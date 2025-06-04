@@ -56,6 +56,14 @@ async function step() {
 console.log("Outside");
 step();  
 
+//! One thing we have to understand that whenever we create async function than this function was promise-based function it return promise or if we return the primitive value than it wrap inside the promise and return as resolve promise as that primitive value. 
+
+async function exampleAsync() {
+    return "Aayush"
+}; 
+
+console.log(exampleAsync()); //? Promise { 'Aayush' } 
+//* As we say that it return promise always as resolve promise 
 
 //* Output was : 
 // Downloading from the url  www.xyz.com
