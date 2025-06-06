@@ -45,7 +45,7 @@ console.log(iphone);
 // iphone.addToCart();
 // iphone.removeFromCart();
 
-//! What happens when we call the constructor **without** the `new` keyword?
+//! What happens when we call the constructor without the `new` keyword?
 
 // const samsungPhone = Product("Samsung S10", 80000, "Samsung");
 // console.log(samsungPhone);
