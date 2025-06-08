@@ -137,6 +137,8 @@ Tokenization
 
 The DOM and CSSOM are not the final output of the browser. These two trees are combined to form the **Render Tree**. This render tree contains only the visible elements and the styles that will be applied.
 
+The **Render Tree** acts as the single source of truth for the browser when it comes to displaying content on the screen. It determines which HTML elements should be rendered based on visibility rules (like `display: none`) and what styles should be applied to those elements using information from the CSSOM. By combining both the DOM and CSSOM, the render tree ensures that only the styled, visible elements are passed to the layout and painting stages, ultimately deciding what appears visually on the web page.
+
 ```txt
 HTML → DOM Tree
 CSS  → CSSOM Tree
@@ -160,7 +162,7 @@ Final Visual Output
 
 At this point, we see the actual web page displayed in the browser.
 
-Finally, **JavaScript** can manipulate the DOM after this entire process. When JavaScript changes an element in the DOM (like updating text or style), it may trigger changes in the render tree. This could lead to another layout and paint process, making the page interactive and dynamic.
+ **JavaScript** can manipulate the DOM after this entire process. When JavaScript changes an element in the DOM (like updating text or style), it may trigger changes in the render tree. This could lead to another layout and paint process, making the page interactive and dynamic.
 
 So, using JavaScript to manipulate the DOM also means we are indirectly affecting how things are displayed on the screen!
 
