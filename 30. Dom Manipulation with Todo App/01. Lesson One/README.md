@@ -1,10 +1,8 @@
-# Lesson One - Introduction to DOM Manipulation
+# Lesson One - Introduction to DOM Manipulation : DOM , CSSOM and Render Tree 
 
 We see on websites that there are buttons—when we click on them, a dialog box opens or the page navigates to another section. On websites, we also interact with our keyboard, like when filling out a form. In some websites, we see beautiful and interactive animations. All of this is possible because of JavaScript manipulating the DOM.
 
 JavaScript was created by Brendan Eich with the specific purpose of enabling interactions in the browser—such as manipulating web page content dynamically, handling events, and creating responsive experiences. DOM manipulation is one of the key reasons JavaScript was born.
-
----
 
 ## What is DOM?
 
@@ -130,8 +128,7 @@ Tokenization
    ↓
  CSSOM Tree
 ```
-
----
+**The CSSOM is blocking in nature because the browser cannot render any part of the page until all the CSS has been fully downloaded and parsed into the CSSOM tree. For example, if a CSS file is loaded externally or we override styles using new rules, the browser pauses the rendering process and waits until the entire CSSOM is ready. This is done to ensure that no visual flickering or incorrect styles are shown to the user. Only after the CSSOM is completely built can the browser safely proceed to construct the Render Tree and paint the content on the screen.**
 
 ## Building the Render Tree
 
