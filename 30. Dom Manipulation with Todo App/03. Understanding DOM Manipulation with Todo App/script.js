@@ -11,6 +11,14 @@ function addTodoToLocalStorage(todoText) {
 //* Actually when we seting todos from this setItem than it convert our object into String so it become [object Object]
 };
 
+function appendTodoInHtml(todoText) { 
+    const todoList = document.getElementById("todoList"); 
+    const li = document.createElement("li"); 
+    li.textContent = todoText; 
+    todoList.appendChild(li); 
+
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const todoInput = document.getElementById("input-todo"); 
     const submitBtn = document.getElementById("todoButton");  
@@ -22,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
            alert("Please write something for the todo");
        }else {
            addTodoToLocalStorage(todoText); 
+           appendTodoInHtml(todoText); 
+           todoInput.value = ""
        }
     });
 
@@ -30,9 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const todoText = event.target.value.trim();
     }); 
 
-    
+    const todos = loadTodos();
 
-    loadTodos();
+    todos.todoList.forEach(todo => {
+       const newTodoItem = document.createElement("li");  
+       newTodoItem.textContent = todo; 
+       todoList.appendChild(newTodoItem);
+    });
 
 }); 
 
