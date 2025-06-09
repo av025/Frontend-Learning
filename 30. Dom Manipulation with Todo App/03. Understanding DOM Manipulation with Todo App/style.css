@@ -6,6 +6,8 @@
     --add-todo-btn:#5cabff;
     --todo-hover-btn: #2b75c5;
     --input-outline-color:#6495ed;
+    --btn-secondary:#f8e068;
+    --btn-active:#4a90e2;
 
 }
 
@@ -75,4 +77,24 @@ li:last-child {
 
 li:hover {
     background-color: aliceblue;
+}
+
+.filterBtn {
+    margin: 6px;
+    padding: 10px 15px;
+    background-color: var(--btn-secondary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+} 
+
+.filterBtn:hover {
+    background-color: var(--btn-active);
+    color: var(--white-color);
+} 
+
+.todoItem {
+    letter-spacing: 1.5;
 }
