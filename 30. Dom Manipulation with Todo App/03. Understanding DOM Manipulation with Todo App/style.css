@@ -8,6 +8,9 @@
     --input-outline-color:#6495ed;
     --btn-secondary:#f8e068;
     --btn-active:#4a90e2;
+    --btn-edit: #ffd700;
+    --btn-complete: #32cd32;
+    --btn-delete:#ff6347;
 
 }
 
@@ -79,7 +82,7 @@ li:hover {
     background-color: aliceblue;
 }
 
-.filterBtn {
+.filterBtn, .editBtn, .completeBtn, .deleteBtn {
     margin: 6px;
     padding: 10px 15px;
     background-color: var(--btn-secondary);
@@ -95,6 +98,30 @@ li:hover {
     color: var(--white-color);
 } 
 
+.editBtn {
+    background-color: var(--btn-edit);
+} 
+
+.completeBtn {
+    background-color: var(--btn-complete);
+}
+
+.deleteBtn {
+    background-color: var(--btn-delete);
+}
+
 .todoItem {
     letter-spacing: 1.5;
+}
+
+.todoItem {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.completed {
+    text-decoration: line-through;
 }
