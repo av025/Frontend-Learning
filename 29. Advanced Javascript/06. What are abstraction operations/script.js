@@ -166,4 +166,6 @@ console.log(1 === NaN);
 
 //! When we copmare NaN in both abstract equality or abstract equality was not equal to each other it give always false to us... 
 console.log(NaN === NaN); // Output : False 
-console.log(NaN == NaN); // Output : False 
+console.log(NaN == NaN); // Output : False  
+
+//? In abstract equality also type checking was happen
