@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React in Pure Form</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!--* Here we use React CDN  -->
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script> 
+        // Let's write the react app 
+        function App() {
+            // return React.createElement("h1", {}, "Hello World"); 
+            // Let return nexted element 
+            return React.createElement("div", {}, React.createElement("p", {}, "This was nested React element"))
+        }; 
+        const rootContainer = document.getElementById("root");
+        const root = ReactDOM.createRoot(rootContainer)
+
+        root.render(App(), );
+    </script>
+    <!--! From Tommorrow Morning we have to start from 1:20:00  -->
+</body>
+</html>
