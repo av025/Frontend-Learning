@@ -155,7 +155,7 @@ function e(f) {
 
 // console.log("Loop executing complete"); 
 
-//* In above code first native js code was executed and the async code was processing and wait into macro-queue or callstack after all our native code execute in synchronous code than the asynchronous code setTimeout function executed.  
+//* In above code first native js code was executed and the async code was processing and wait into macro-queue or callback after all our native code execute in synchronous code than the asynchronous code setTimeout function executed.  
 
 //* Debug this code : 
 
@@ -177,4 +177,4 @@ console.log("For Loop Executed !!!");
 
 console.log("End"); 
 
-//! Explain the above code by debuging and from tommorrow start video from 2:39:00 
+
