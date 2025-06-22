@@ -1,30 +1,20 @@
-/**
- *  This fetchTodos() function fetching the todos from local storage.
- */
+
 function fetchTodos() {
   const todos = JSON.parse(localStorage.getItem("todos")) || { todoList: [] };
-  console.log(todos);
   return todos;
 }
-/**
- *  refreshTodos()  function this todo will fetch updated todos from local-storage
- */
+
 function refreshTodos(todos) {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
-/**
- * This addTodoToLocalStorage() function  add the todo in localStorage taking parameter todoText
- */
+
 function addTodoToLocalStorage(todo) {
   const loadTodos = fetchTodos();
 
   loadTodos.todoList.push({ ...todo, id: loadTodos.todoList.length });
   localStorage.setItem("todos", JSON.stringify(loadTodos));
 }
-/**
- * This appendTodoInHTML() function  render our todos with edit, delete and completed button
- *
- */
+
 function appendTodoInHTML(todo) {
   const taskList = document.getElementById("taskList");
   const wrapperTodo = document.createElement("div");
@@ -63,13 +53,7 @@ function appendTodoInHTML(todo) {
   taskList.appendChild(todoItem);
 }
 
-/**
- *  This executeFilter Action() function will do filtering of our todos
- *  We have three filtering option
- *  All : Which render all the default todos
- *  Completed : Render those todos which was completed
- *  Pending: Render those todo on that action was not perform
- */
+
 
 function executeFilterAction(event) {
   const taskList = document.getElementById("taskList");
@@ -105,9 +89,6 @@ function refreshHTMLTodo(todos) {
   });
 }
 
-/**
- * completeTodo() function this will mark our todo complete
- */
 function completeTodo(event) {
   const element = event.target.parentElement.parentElement; //? Accessing the parentElement with target object.
   const todoId = element.getAttribute("data-id");
@@ -172,9 +153,7 @@ function addNewTodo() {
   }
 }
 
-/**
- *  This below code was main event Listener DOMContentLoaded
- */
+
 document.addEventListener("DOMContentLoaded", function eventHandler() {
   const todoInput = document.getElementById("todoInput");
   const submitBtn = document.getElementById("addTodo");
@@ -186,14 +165,11 @@ document.addEventListener("DOMContentLoaded", function eventHandler() {
     btn.addEventListener("click", executeFilterAction);
   }
 
-  //* submitBtn
   submitBtn.addEventListener("click", addNewTodo);
 
-  //* todoInput
   todoInput.addEventListener("change", function onChangeHandler(event) {
     const todoText = event.target.value.trim();
   });
-  //* Loading todos from localStorage api
   todos.todoList.forEach((todo) => {
     appendTodoInHTML(todo);
   });
