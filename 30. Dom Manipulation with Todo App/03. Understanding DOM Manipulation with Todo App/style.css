@@ -1,0 +1,120 @@
+:root {
+  --body-background: #f4f4f9;
+  --btn-primary: #5cabff;
+  --btn-secondary: #dc143c;
+  --btn-active: #ffd700;
+  --btn-edit: #fcd706;
+  --btn-completed: #15f215;
+  --btn-delete: #f50d0d;
+  --white-background: #fff;
+  --box-shadow-color: #0000001a;
+  --border-color: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-background);
+  font-family: cursive;
+}
+
+.container {
+  background-color: var(--white-background);
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px var(--box-shadow-color);
+  padding: 20px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+#todoInput {
+  width: 75%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#addTodo {
+  padding: 10px 20px;
+  background-color: var(--btn-primary);
+  color: var(--white-background);
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:hover {
+  background-color: aliceblue;
+}
+
+.filterBtn,
+.edit-btn,
+.completed-btn,
+.delete-btn {
+  margin-left: 5px;
+  margin: 10px;
+  padding: 10px 12px;
+  background-color: var(--btn-secondary);
+  color: var(--white-background);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filterBtn:hover {
+  background-color: var(--btn-active);
+  color: initial;
+}
+
+.todoItem {
+  letter-spacing: 1.5;
+}
+
+.edit-btn {
+    background-color: var(--btn-edit);
+    
+} 
+
+.completed-btn {
+    background-color: var(--btn-completed);
+} 
+
+.delete-btn {
+    background-color: var(--btn-delete);
+} 
+
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.completed {
+    text-decoration: line-through;
+}
