@@ -1,35 +1,34 @@
-//! From tommorrow Start with  1:40:00 Timestamp 
-
 import TextInput from "../TextInput/TextInput";
 import Button from "../Button/Button";
-const TextInputForm = () => {
-
-    function formSubmitHandler(event) { 
-        event.preventDefault();
-        console.log("Form Submit")
-
-    }; 
-
-    function handleTextInputChange(event) {
-        console.log(event.target.value)
-    }
+const TextInputForm = ({
+  inputType,
+  formSubmitHandler,
+  handleTextInputChange,
+  handleShowHideClick,
+}) => {
   return (
     <>
       <form onSubmit={formSubmitHandler}>
         <div>
           <TextInput
+            inputType={inputType}
             label={"Enter a Word or Phrase here"}
             placeholder={"Enter a Phrase or Word here ..."}
             onChangeHandler={handleTextInputChange}
           />
         </div>
         <div>
-            <Button 
+          <Button
             styleType="warning"
-            buttonText={"Show/Hide"}/>
+            buttonText={inputType === "password" ? "Show" : "Hide"}
+            onClickHandler={handleShowHideClick}
+          />
 
-            <Button buttonColor="primary" buttonText={"Submit"} buttonType="submit"/>
-
+          <Button
+            buttonColor="primary"
+            buttonText={"Submit"}
+            buttonType="submit"
+          />
         </div>
       </form>
     </>
