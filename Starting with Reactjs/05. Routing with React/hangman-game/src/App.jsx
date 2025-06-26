@@ -1,0 +1,13 @@
+import TextInputFormContainer from "./components/TextInputForm/TextInputFormContainer"
+
+function App() {
+
+
+  return (
+    <>
+    <TextInputFormContainer />
+    </>
+  )
+}
+
+export default App

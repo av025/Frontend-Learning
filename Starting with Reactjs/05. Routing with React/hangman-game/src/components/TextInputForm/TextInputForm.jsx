@@ -1,19 +1,20 @@
-import TextInput from "../TextInput/TextInput";
 import Button from "../Button/Button";
-const TextInputForm = ({
+import TextInput from "../TextInput/TextInput";
+
+function TextInputForm({
   inputType,
   formSubmitHandler,
   handleTextInputChange,
   handleShowHideClick,
-}) => {
+}) {
   return (
     <>
       <form onSubmit={formSubmitHandler}>
         <div>
           <TextInput
             inputType={inputType}
-            label={"Enter a Word or Phrase here"}
-            placeholder={"Enter a Phrase or Word here ..."}
+            label="Enter a Word or Phrase here"
+            placeholder={"Enter a Word or Phrase here...."}
             onChangeHandler={handleTextInputChange}
           />
         </div>
@@ -23,7 +24,8 @@ const TextInputForm = ({
             buttonText={inputType === "password" ? "Show" : "Hide"}
             onClickHandler={handleShowHideClick}
           />
-
+        </div>
+        <div>
           <Button
             styleType="primary"
             buttonText={"Submit"}
@@ -33,6 +35,6 @@ const TextInputForm = ({
       </form>
     </>
   );
-};
+}
 
 export default TextInputForm;
