@@ -22,7 +22,7 @@ function TextInputFormContainer() {
   }
 
   function handleTextInputChange(event) {
-    setValue(event.target.value);
+    setValue(event.target.value.trim());
   }
 
   function handleShowHideClick() {
