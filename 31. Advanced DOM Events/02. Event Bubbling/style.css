@@ -1,0 +1,20 @@
+#div {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer {
+    margin: 30px;
+    width: 400px;
+    height: 400px;
+}
+
+.outer img {
+    width: 300px;
+    height: 300px;
+
+}

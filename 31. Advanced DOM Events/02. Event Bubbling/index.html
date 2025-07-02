@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Event Bubbling</h1>
+
+    <div id="div">
+      <button id="button">Click On Me</button>
+    </div>
+
+    <div>
+        <button id="buttonTwo">Click to Toggle Image</button>
+    </div>
+    <div class="outer" id="outer">
+      <img
+      id="img"
+        src="https://images.pexels.com/photos/32796144/pexels-photo-32796144.jpeg"
+        alt="some random image" data-toggle="0"
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
