@@ -1,0 +1,12 @@
+#outer  {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #111;
+}
+
+#outer img {
+    width: 380px;
+    height: 380px;
+} 
+
+
