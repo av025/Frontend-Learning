@@ -1,0 +1,220 @@
+{
+    "words" : [
+        {
+            "wordValue": "MANGO",
+            "wordHint": "Fruit"
+        },
+        {
+            "wordValue": "ELEPHANT",
+            "wordHint": "Animal"
+        },
+        {
+            "wordValue": "TIGER",
+            "wordHint": "Animal"
+        },
+        {
+            "wordValue": "LION",
+            "wordHint": "Animal"
+        },
+        {
+            "wordValue": "EAGLE",
+            "wordHint": "Bird"
+        },
+        {
+            "wordValue": "SPARROW",
+            "wordHint": "Bird"
+        },
+        {
+            "wordValue": "SHARK",
+            "wordHint": "Fish"
+        },
+        {
+            "wordValue": "SALMON",
+            "wordHint": "Fish"
+        },
+        {
+            "wordValue": "OCEAN",
+            "wordHint": "Nature"
+        },
+        {
+            "wordValue": "MOUNTAIN",
+            "wordHint": "Nature"
+        },
+        {
+            "wordValue": "DESERT",
+            "wordHint": "Nature"
+        },
+        {
+            "wordValue": "FOREST",
+            "wordHint": "Nature"
+        },
+        {
+            "wordValue": "RIVER",
+            "wordHint": "Nature"
+        },
+        {
+            "wordValue": "COMPUTER",
+            "wordHint": "Technology"
+        },
+        {
+            "wordValue": "INTERNET",
+            "wordHint": "Technology"
+        },
+        {
+            "wordValue": "ROBOT",
+            "wordHint": "Technology"
+        },
+        {
+            "wordValue": "PYTHON",
+            "wordHint": "Programming Language"
+        },
+        {
+            "wordValue": "JAVASCRIPT",
+            "wordHint": "Programming Language"
+        },
+        {
+            "wordValue": "JAVA",
+            "wordHint": "Programming Language"
+        },
+        {
+            "wordValue": "TEACHER",
+            "wordHint": "Profession"
+        },
+        {
+            "wordValue": "DOCTOR",
+            "wordHint": "Profession"
+        },
+        {
+            "wordValue": "ENGINEER",
+            "wordHint": "Profession"
+        },
+        {
+            "wordValue": "LAWYER",
+            "wordHint": "Profession"
+        },
+        {
+            "wordValue": "NURSE",
+            "wordHint": "Profession"
+        },
+        {
+            "wordValue": "CAR",
+            "wordHint": "Vehicle"
+        },
+        {
+            "wordValue": "BUS",
+            "wordHint": "Vehicle"
+        },
+        {
+            "wordValue": "BICYCLE",
+            "wordHint": "Vehicle"
+        },
+        {
+            "wordValue": "TRAIN",
+            "wordHint": "Vehicle"
+        },
+        {
+            "wordValue": "AIRPLANE",
+            "wordHint": "Vehicle"
+        },
+        {
+            "wordValue": "CHAIR",
+            "wordHint": "Furniture"
+        },
+        {
+            "wordValue": "TABLE",
+            "wordHint": "Furniture"
+        },
+        {
+            "wordValue": "SOFA",
+            "wordHint": "Furniture"
+        },
+        {
+            "wordValue": "BED",
+            "wordHint": "Furniture"
+        },
+        {
+            "wordValue": "CUP",
+            "wordHint": "Object"
+        },
+        {
+            "wordValue": "PEN",
+            "wordHint": "Object"
+        },
+        {
+            "wordValue": "BOOK",
+            "wordHint": "Object"
+        },
+        {
+            "wordValue": "CLOCK",
+            "wordHint": "Object"
+        },
+        {
+            "wordValue": "PHONE",
+            "wordHint": "Object"
+        },
+        {
+            "wordValue": "SUMMER",
+            "wordHint": "Season"
+        },
+        {
+            "wordValue": "WINTER",
+            "wordHint": "Season"
+        },
+        {
+            "wordValue": "SPRING",
+            "wordHint": "Season"
+        },
+        {
+            "wordValue": "AUTUMN",
+            "wordHint": "Season"
+        },
+        {
+            "wordValue": "RED",
+            "wordHint": "Color"
+        },
+        {
+            "wordValue": "BLUE",
+            "wordHint": "Color"
+        },
+        {
+            "wordValue": "GREEN",
+            "wordHint": "Color"
+        },
+        {
+            "wordValue": "YELLOW",
+            "wordHint": "Color"
+        },
+        {
+            "wordValue": "BLACK",
+            "wordHint": "Color"
+        },
+        {
+            "wordValue": "WHITE",
+            "wordHint": "Color"
+        },
+        {
+            "wordValue": "MONDAY",
+            "wordHint": "Day"
+        },
+        {
+            "wordValue": "FRIDAY",
+            "wordHint": "Day"
+        },
+        {
+            "wordValue": "SUNDAY",
+            "wordHint": "Day"
+        },
+        {
+            "wordValue": "JUNE",
+            "wordHint": "Month"
+        },
+        {
+            "wordValue": "DECEMBER",
+            "wordHint": "Month"
+        },
+        {
+            "wordValue": "AUGUST",
+            "wordHint": "Month"
+        }
+    ]
+}
