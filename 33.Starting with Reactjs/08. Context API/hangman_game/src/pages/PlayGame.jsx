@@ -6,13 +6,15 @@ import {
 } from "react-router-dom";
 import MaskText from "../components/MaskText/MaskText";
 import LetterButton from "../components/LetterButtons/LettorButton";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import HangMan from "../components/hangMan/HangMan";
+import { WordContext } from "../context/wordContext";
 
 
 function PlayGame() {
   const [guessedLetters, setGuessedLetters] = useState([]);
   const [step, setStep] = useState(0); 
+ const {wordList, word} = useContext(WordContext)
 
 
   //? For Accessing the search-params we are using useSearchParams hooks
@@ -25,8 +27,8 @@ function PlayGame() {
   // const {text} = params
 
   //? Now we are sending our data as state property in a useNavigation hook for access that data we are using the useLoaction() hook here to access the state property
-  const location = useLocation();
-  const { state } = location;
+  // const location = useLocation();
+  // const { state } = location;
 
   function handleLetterClick(letter) {
     if(state?.wordSelected?.toUpperCase().includes(letter)) {
@@ -44,11 +46,12 @@ function PlayGame() {
   return (
     <>
       <h1> Play Game </h1>
-      { state?.wordSelected && (<> 
-      <MaskText text={state?.wordSelected} guessedLetters={guessedLetters} />
+      {wordList.map(wordObject => <li key={wordObject.id}>{wordObject.wordValue}</li>)}
+      { word && (<> 
+      <MaskText text={word} guessedLetters={guessedLetters} />
       <div>
         <LetterButton
-          text={state?.wordSelected}
+          text={word}
           guessedLetters={guessedLetters}
           onLetterClick={handleLetterClick}
         />
