@@ -12,6 +12,15 @@ The git **stash** command is very handy when we need to switch between branches 
 
 `git stash show` : ***This command shows a summary of the changes in the most recent stash.***
 
-`git stash show stash@{index}` : ***Use this command to see the changes in a specific stash by providing its index number.*** 
+`git stash show stash@{index}` : ***This command displays a summary of changes in a specific stash by providing its index.*** 
 
-<!--! Starting from untrack changes from tomorrow -->
+`git stash --<filename>` : ***This command stashes changes from a specific tracked file into the stash (temporary storage).***
+
+
+`git stash drop stash@{index_number}` : ***This command removes a specific stash entry by its index. Useful for cleaning up old or unnecessary stashes.***
+
+`git stash clear` : ***This command clears all stash entries. It completely wipes out all saved stash data. Use with caution!*** 
+
+### Stash the Untracked File 
+With the help of **--include-untracked** flag we can stash our untracked changes also
+`git stash --include-untracked` : ***This command was helpful to stash the untracked files also and saved in our temperory save area*** 
