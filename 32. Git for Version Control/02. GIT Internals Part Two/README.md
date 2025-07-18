@@ -24,3 +24,24 @@ The git **stash** command is very handy when we need to switch between branches 
 ### Stash the Untracked File 
 With the help of **--include-untracked** flag we can stash our untracked changes also
 `git stash --include-untracked` : ***This command was helpful to stash the untracked files also and saved in our temperory save area*** 
+
+`git stash --<filename>` : ***This command stashes changes from a specific tracked file into the stash (temporary storage).***
+
+
+`git stash drop stash@{index_number}` : ***This command removes a specific stash entry by its index. Useful for cleaning up old or unnecessary stashes.***
+
+`git stash clear` : ***This command clears all stash entries. It completely wipes out all saved stash data. Use with caution!*** 
+
+### Stash the Untracked File 
+With the help of **--include-untracked** flag we can stash our untracked changes also
+`git stash --include-untracked` : ***This command was helpful to stash the untracked files also and saved in our temperory save area***  
+`git stash --include-untracked` : ***This command was helpful to stash the untracked files also and saved in our temperory save area***   
+
+
+`git stash save "message whatever we want"`: ***This will save your uncommitted changes with the message***
+
+`git commit --amend`: **helps you modify your most recent commit — either to change the commit message or to add new changes you forgot to include**
+
+
+`git reflog`: **shows a log of all recent changes made to the HEAD (including commits, rebase, reset, amend, checkout, etc.) — even if those commits are not reachable via branch or tag.**
+
