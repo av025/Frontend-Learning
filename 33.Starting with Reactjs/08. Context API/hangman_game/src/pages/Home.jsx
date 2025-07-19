@@ -2,10 +2,13 @@ import { Link  } from "react-router-dom"
 import Button from "../components/Button/Button"
 import { useContext, useEffect, useState } from "react"
 import { WordContext } from "../context/wordContext";
+import useWordStore from "../store/wordStore";
 
 function Home() {
  
-  const {setWordList, word, setWord} = useContext(WordContext);
+  const { setWord} = useContext(WordContext); 
+
+  const { setWordList} = useWordStore(); 
  
   async function fetchWords() {
     const response = await fetch("http://localhost:3000/words");

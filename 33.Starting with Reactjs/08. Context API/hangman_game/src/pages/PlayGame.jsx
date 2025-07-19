@@ -9,12 +9,14 @@ import LetterButton from "../components/LetterButtons/LettorButton";
 import { useContext, useState } from "react";
 import HangMan from "../components/hangMan/HangMan";
 import { WordContext } from "../context/wordContext";
+import useWordStore from "../store/wordStore";
 
 
 function PlayGame() {
   const [guessedLetters, setGuessedLetters] = useState([]);
   const [step, setStep] = useState(0); 
- const {wordList, word} = useContext(WordContext)
+ const {word} = useContext(WordContext)
+ const {wordList} = useWordStore(); 
 
 
   //? For Accessing the search-params we are using useSearchParams hooks
@@ -31,7 +33,7 @@ function PlayGame() {
   // const { state } = location;
 
   function handleLetterClick(letter) {
-    if(state?.wordSelected?.toUpperCase().includes(letter)) {
+    if(word?.wordValue?.toUpperCase().includes(letter)) {
       console.log("Correct")
     }else {
       console.log("Wrong"); 
