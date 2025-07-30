@@ -56,7 +56,7 @@ function userReducer(state = [], action) {
   return state; 
 }
 
-const combinedReducers = combineReducers({todo:userReducer, users:userReducer} )
+const combinedReducers = combineReducers({todo:todoReducer, users:userReducer} )
 
 //! This createStore() was depreacted now
 // const response = createStore(todoReducer, []);
@@ -91,7 +91,11 @@ const addTodo = (todoText) => {
 
 const deleteTodo = (todoId) => {
   return { type: DELETE_TODO, payload: { todoId } };
-};
+}; 
+
+const addUser = (userName) => {
+  return {type: ADD_USER, payload: {userName}}
+}
 
 // dispatch method
 // adding todo
@@ -107,9 +111,11 @@ const deleteTodo = (todoId) => {
 // console.log(getState());
 
 //? bindActionCreators Method which bind this function action creators with dispatch
-const action = bindActionCreators({ addTodo, deleteTodo }, dispatch);
+const action = bindActionCreators({ addTodo, deleteTodo, addUser }, dispatch);
 //* Here we bind our simple JS action with dispatch and now we don't use dispatch to update our state
 action.addTodo("Learning Reactjs");
 action.addTodo("Learning Redux Core for State Management");
+action.addUser("Aayush Vyas"); 
+
 
 console.log(getState());
