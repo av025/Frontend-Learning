@@ -16,7 +16,8 @@ export default function AddTodo({add}) {
          }}  />
          <button onClick={() => {
             // dispatch(todoAdd(inputText)); 
-            add(inputText); 
+            add({todoText :inputText}); 
+            // Here we have to pass payload manually because in redux-toolkit it takes our payload direct value inputText
             setInputText("")
          }}>Add Todo</button>
     </div>

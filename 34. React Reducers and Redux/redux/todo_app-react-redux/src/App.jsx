@@ -7,12 +7,14 @@ import TodoDispatchContext from "./context/TodoDispatchContext"
 import { useDispatch } from "react-redux"
 import { bindActionCreators } from "redux"
 import { todoAdd, todoDelete, todoFinished, todoUpdate } from "./actions/todoActions"
+import { addTodo, deleteTodo, finishedTodo, updateTodo } from "./slice/todoSlice"
 
 
 function App() {  
 
 const dispatch =   useDispatch(); 
-const actions = bindActionCreators({todoAdd ,todoDelete, todoFinished, todoUpdate  }, dispatch); 
+// const actions = bindActionCreators({todoAdd ,todoDelete, todoFinished, todoUpdate  }, dispatch); 
+const actions = bindActionCreators({addTodo, deleteTodo, finishedTodo, updateTodo}, dispatch); 
 
 // const [list , dispatch] =  useReducer( todoReducer, [])
 
@@ -21,9 +23,9 @@ const actions = bindActionCreators({todoAdd ,todoDelete, todoFinished, todoUpdat
     // <TodoDispatchContext.Provider value={{dispatch}}>
    <>
     <div style={{margin : "1rem 0"}}>
-      <AddTodo add = {actions.todoAdd}/>
+      <AddTodo add = {actions.addTodo}/>
     </div>
-    <TodoList remove = {actions.todoDelete} finished = {actions.todoFinished} update = {actions.todoUpdate} />
+    <TodoList remove = {actions.deleteTodo} finished = {actions.finishedTodo} update = {actions.updateTodo} />
    </>
     // </TodoDispatchContext.Provider>
     // </TodoContext.Provider>

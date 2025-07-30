@@ -11,7 +11,7 @@ function TodoList({ update, finished, remove }) {
 
   const dispatch = useDispatch(); 
   
- const list =  useSelector( state => state.todo)
+ const list =  useSelector( state => state.todo.todoList)
  //? This useSelector hook help to get the state of our redux store to component 
 
 
