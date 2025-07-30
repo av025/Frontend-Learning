@@ -21,7 +21,7 @@ const todoSlice = createSlice({
       let todoText = action.payload.todoText;
       todo.todoList = todo.todoList.map((t) => {
         if (t.id === todoItem.id) {
-          todoItem.text = todoText;
+          t.text = todoText;
         }
 
         return t;
@@ -34,7 +34,7 @@ const todoSlice = createSlice({
 
       todo.todoList = todo.todoList.map((t) => {
         if (t.id === todoItem.id) {
-          todoItem.isFinished = isFinished;
+          t.isFinished = isFinished;
         }
 
         return t;

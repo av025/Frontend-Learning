@@ -9,7 +9,7 @@ function TodoList({ update, finished, remove }) {
   // const { list } = useContext(TodoContext);
   // const { dispatch } = useContext(TodoDispatchContext); 
 
-  const dispatch = useDispatch(); 
+  // const dispatch = useDispatch(); 
   
  const list =  useSelector( state => state.todo.todoList)
  //? This useSelector hook help to get the state of our redux store to component 
@@ -17,17 +17,17 @@ function TodoList({ update, finished, remove }) {
 
   function onFinished(todoItem, isFinished) {
     // dispatch(todoFinished(todoItem, isFinished)); 
-    finished(todoItem, isFinished); 
+    finished({todoItem, isFinished}); 
   }
 
   function deleteTodo(todoId) {
     // dispatch(todoDelete(todoId)); 
-    remove(todoId); 
+    remove({todoId}); 
   }
 
   function updateTodo(todoItem, todoText) {
     // dispatch(todoUpdate(todoItem, todoText));
-    update(todoItem, todoText)
+    update({todoItem, todoText})
   } 
 
 
