@@ -7,7 +7,7 @@ function TweetList({ tweets }) {
       <ul className={styles.tweetList}>
         {tweets.map((tweet) => {
           return (
-            <li className={styles.tweetLikeWrapper}>
+            <li className={styles.tweetLikeWrapper} key={tweet.id}>
               <Tweet key={tweet.id} tweetContent={tweet.content} likesCount={tweet.likeCount} />
             </li>
           );
