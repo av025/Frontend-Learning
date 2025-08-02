@@ -1,13 +1,24 @@
-import './App.css'
-import Tweet from './components/Tweet'
+import "./App.css";
+import TweetList from "./components/TweetList";
+
+const initialDummyTweet = [
+  {
+    id: 0,
+    content: "We have a twitter called as threads",
+    likeCount: 5,
+  },
+  { id: 1, content: "What should be post ?", likeCount: 4 },
+  { id: 2, content: "What is up with tech community", likeCount: 3 },
+];
 
 function App() {
-
   return (
-    <> 
-     <Tweet tweetContent={"First Tweet"} likesCount={20} />
-    </>
-  )
+    <div>
+      <TweetList
+        tweets={initialDummyTweet}
+      />
+    </div>
+  );
 }
 
-export default App
+export default App;
