@@ -1,6 +1,8 @@
+import { v4 as uuidv4 } from "uuid";
+
 export const initialDummyTweet = [
   {
-    id: 0,
+    id:uuidv4(),
     content: "We have a twitter called as threads",
     likeCount: 5,
     createdAt: new Date().toLocaleDateString("en-GB", {
@@ -10,7 +12,7 @@ export const initialDummyTweet = [
     }),
   },
   {
-    id: 1,
+    id:uuidv4(),
     content: "What should be post ?",
     likeCount: 4,
     createdAt: new Date().toLocaleDateString("en-GB", {
@@ -20,7 +22,7 @@ export const initialDummyTweet = [
     }),
   },
   {
-    id: 2,
+    id: uuidv4(),
     content: "What is up with tech community",
     likeCount: 3,
     createdAt: new Date().toLocaleDateString("en-GB", {
