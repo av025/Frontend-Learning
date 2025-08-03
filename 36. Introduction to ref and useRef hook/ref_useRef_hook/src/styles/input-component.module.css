@@ -1,0 +1,11 @@
+.inputWrapper {
+    margin: 1rem;
+}
+
+.input {
+    width: 30%;  
+    padding : 1rem; 
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
