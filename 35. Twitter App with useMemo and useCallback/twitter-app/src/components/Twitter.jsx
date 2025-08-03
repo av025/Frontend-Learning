@@ -1,27 +1,33 @@
-import { useState } from "react";
+import { useState, useCallback, memo } from "react";
 import { initialDummyTweet } from "../utility/utility";
 import TweetList from "./TweetList";
 import AddTweet from "./AddTweet";
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from "uuid"; 
+
+const MemoisedAddTweet = memo(AddTweet)
 
 export default function Twitter() {
   const [tweets, setTweets] = useState(initialDummyTweet);
 
 const tweetId = uuidv4(); 
 
-  const handleAddTweet = function (tweet) {
+  const handleAddTweet = useCallback(function (tweet) {
     setTweets([
       ...tweets,
       {
         id: tweetId,
         content: tweet,
         likeCount: Math.floor(Math.random() * 100000),
-        createdAt: new Date().toUTCString()
+        createdAt:new Date().toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    })
       },
     ]);
-  }; 
+  }, [tweets]); 
  
-  const handleEditTweet = function(tweet) { 
+  const handleEditTweet = useCallback(function(tweet) { 
     setTweets(
       tweets.map((currentTweet) => {
         if(currentTweet.id === tweet.id) {
@@ -32,9 +38,9 @@ const tweetId = uuidv4();
       })
     )
 
-  }; 
+  }, [tweets]); 
 
-  const sortTweet = () => {
+  const sortTweet = useCallback(() => {
   const sortedTweets = [...tweets].sort((tOne, tTwo) => {
     const dateA = new Date(tOne.createdAt);
     const dateB = new Date(tTwo.createdAt);
@@ -42,12 +48,12 @@ const tweetId = uuidv4();
   });
 
   setTweets(sortedTweets);
-};
+}, []);
 
 
   return (
     <>
-      <AddTweet onAddTweet={handleAddTweet} />
+      <MemoisedAddTweet onAddTweet={handleAddTweet} />
       <button onClick={sortTweet}>Sorted Tweet by Created At</button>
       <TweetList tweets={tweets} onEditTweet = {handleEditTweet} />
     </>
