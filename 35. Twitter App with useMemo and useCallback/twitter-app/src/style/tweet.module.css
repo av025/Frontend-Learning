@@ -11,6 +11,12 @@
     margin-bottom: 1rem;
 }
 
-.likes {
-    font-size: xx-small;
+.likes, .createdAt {
+    font-size: 1rem;
+}
+
+
+.likesCreatedAtWrapper, .tweetContentWrapper {
+    display: flex;
+    justify-content: space-between;
 }
