@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ButtonComponent from "./ButtonComponent";
 import InputComponent from "./InputComponent";
+import passwordValidator from "../helper/passwordValidator";
+import emailValidator from "../helper/emailValidator";
 
 function FormContainer() {
   const [formValues, setFormValues] = useState({
@@ -10,17 +12,26 @@ function FormContainer() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-  }; 
+    validatePassword()
+    validateEmail()
+  };
 
   const validatePassword = () => {
-    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{4}$/;
+    const password = formValues.password;
 
-    const password = formValues.password; 
+    if (!passwordValidator(password)) {
+      console.log("Password doesn't contain required params !!!");
+    }
+  }; 
 
-  return regex.test(password);
 
-    } 
-  
+  const validateEmail = () => {
+    const email = formValues.email; 
+
+    if(!emailValidator(email)) {
+        console.log("Email doesn't contain required params !!!"); 
+    }
+  }
 
   return (
     <form onSubmit={handleFormSubmit}>
