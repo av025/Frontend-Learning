@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ButtonComponent from "./ButtonComponent";
 import InputComponent from "./InputComponent";
 import passwordValidator from "../helper/passwordValidator";
@@ -10,32 +10,44 @@ function FormContainer() {
     password: "",
   });
 
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
+  const validateEmailRef = useRef(null);
+  const validatePasswordRef = useRef(null);
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    validatePassword()
-    validateEmail()
+    validatePassword();
+    validateEmail();
   };
 
   const validatePassword = () => {
     const password = formValues.password;
 
     if (!passwordValidator(password)) {
-      console.log("Password doesn't contain required params !!!");
+      validatePasswordRef.current = validatePasswordRef.current.focus();
+      setPasswordError("Please enter a strong password !!!");
+    } else {
+      setPasswordError("");
     }
-  }; 
-
+  };
 
   const validateEmail = () => {
-    const email = formValues.email; 
+    const email = formValues.email;
 
-    if(!emailValidator(email)) {
-        console.log("Email doesn't contain required params !!!"); 
+    if (!emailValidator(email)) {
+      validateEmailRef.current = validateEmailRef.current.focus();
+      setEmailError("Please enter a valid email !!!");
+    } else {
+      setEmailError("");
     }
-  }
+  };
 
   return (
     <form onSubmit={handleFormSubmit}>
       <InputComponent
+        inputId="email-input"
         inputType={"email"}
         inputPlaceholder={"Please Type Email here "}
         value={formValues.email}
@@ -43,8 +55,11 @@ function FormContainer() {
         onChangeHandler={(event) =>
           setFormValues({ ...formValues, email: event.target.value })
         }
+        ref={validateEmailRef}
+        errorText={emailError}
       />
       <InputComponent
+        inputId="password-input"
         inputType={"password"}
         inputPlaceholder={"Please Type Password here"}
         value={formValues.password}
@@ -52,6 +67,8 @@ function FormContainer() {
         onChangeHandler={(event) =>
           setFormValues({ ...formValues, password: event.target.value })
         }
+        ref={validatePasswordRef}
+        errorText={passwordError}
       />
       <ButtonComponent buttonText={"Submit Form"} />
     </form>
