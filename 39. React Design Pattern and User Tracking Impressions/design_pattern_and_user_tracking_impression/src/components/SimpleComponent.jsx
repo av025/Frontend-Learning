@@ -1,11 +1,13 @@
 import ImpressionTrackable from "./ImpressionTrackable";
 
-function SimpleComponent() {
+function SimpleComponent({x}) {
     return <>
-    Simple Component
+    Simple Component {x}
     </>
 }
 
-const EnchancedSimpleTrackableComponent = ImpressionTrackable(SimpleComponent);
+// const EnchancedSimpleTrackableComponent = ImpressionTrackable(SimpleComponent)
 
-export default EnchancedSimpleTrackableComponent; 
+// export default EnchancedSimpleTrackableComponent;  
+
+export default SimpleComponent; 
