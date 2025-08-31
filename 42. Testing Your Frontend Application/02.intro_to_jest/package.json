@@ -1,0 +1,30 @@
+{
+  "name": "02.intro_to_jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^30.1.1"
+  },
+  "devDependencies": {
+    "jest-html-reporter": "^4.3.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+  "reporters": [
+    [
+      "./node_modules/jest-html-reporter",
+      {
+        "pageTitle": "Page Reporter"
+      }
+    ]
+  ]
+}
+
+}
